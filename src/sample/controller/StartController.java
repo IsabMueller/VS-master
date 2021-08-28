@@ -73,7 +73,7 @@ public class StartController {
 
     public void handleBtnDetailTagesÜersicht(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/TagesÜbersicht.fxml"));
-        TerminTabelle.getChildren().setAll(newPane);
+        startPane.getChildren().setAll(newPane);
     }
 
     public void handleBtnTracker(ActionEvent event) throws IOException {
