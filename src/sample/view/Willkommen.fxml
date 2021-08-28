@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="welcomePane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1c1c1c;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.WillkommenController">
+   <children>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #434343;">
+         <children>
+            <ImageView fx:id="brandingImageView1" fitHeight="59.0" fitWidth="200.0" layoutX="14.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Bilder/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnReg" layoutX="300.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleBtnReg" prefHeight="35.0" prefWidth="101.0" style="-fx-background-color: #473c8b;" text="Registrieren" textFill="GAINSBORO" />
+      <Button fx:id="btnLogIn" layoutX="458.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleBtnLogIn" prefHeight="35.0" prefWidth="101.0" style="-fx-background-color: #473c8b;" text="LogIn" textFill="GAINSBORO" />
+      <Label layoutX="316.0" layoutY="144.0" prefHeight="54.0" prefWidth="222.0" text="Hallo User! " textFill="GAINSBORO">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Line endX="66.0" endY="-349.5999755859375" layoutX="162.0" layoutY="448.0" startX="-162.0" startY="-40.800018310546875" stroke="DARKTURQUOISE" />
+      <Line endX="56.0" endY="-312.4000244140625" layoutX="172.0" layoutY="458.0" startX="-172.0" startY="-50.79998779296875" stroke="DARKTURQUOISE" />
+   </children>
+</AnchorPane>

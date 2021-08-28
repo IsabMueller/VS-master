@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="EmailChangePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="287.0" prefWidth="452.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.EinstellungenAendernEmailController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="287.0" prefWidth="452.0" style="-fx-background-color: #1c1c1c;">
+         <children>
+            <Pane prefHeight="287.0" prefWidth="101.0" style="-fx-background-color: #434343;">
+               <children>
+                  <Line endX="-76.7071304321289" endY="-444.21417236328125" layoutX="152.0" layoutY="438.0" startX="-152.0" startY="-151.00003051757812" stroke="DARKTURQUOISE" />
+                  <Line endX="-117.153564453125" endY="-448.70709228515625" layoutX="162.0" layoutY="448.0" startX="-162.0" startY="-160.99996948242188" stroke="DARKTURQUOISE" />
+               </children>
+            </Pane>
+            <Label layoutX="192.0" layoutY="14.0" prefHeight="41.0" prefWidth="172.0" style="-fx-border-color: #00ced1;" text="Email ändern" textFill="GAINSBORO">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Line endX="767.0000610351562" endY="239.5" layoutX="-314.0" layoutY="-38.0" startX="416.0" startY="239.5" stroke="DARKTURQUOISE" />
+            <Button fx:id="btnBackSettings" layoutX="157.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleBtnBackSettings" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Zurück" textFill="GAINSBORO" />
+            <Button fx:id="btnChangedEmail" layoutX="319.0" layoutY="227.0" mnemonicParsing="false" onAction="#submit" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="OK!" textFill="GAINSBORO" />
+            <TextField fx:id="tfAlteEmail" layoutX="225.0" layoutY="73.0" prefHeight="27.0" prefWidth="215.0" style="-fx-background-color: #dcdcdc; -fx-border-color: #00ced1;" />
+            <Label layoutX="114.0" layoutY="78.0" prefHeight="17.0" prefWidth="80.0" text="Alte E-mail" textFill="#9e9e9e" />
+            <Label layoutX="114.0" layoutY="108.0" prefHeight="17.0" prefWidth="80.0" text="Neue E-mail" textFill="#9e9e9e" />
+            <Label layoutX="114.0" layoutY="140.0" prefHeight="17.0" prefWidth="110.0" text="E-mail Wiederholen" textFill="#9e9e9e" />
+            <TextField fx:id="tfNeueEmail" layoutX="225.0" layoutY="104.0" prefHeight="27.0" prefWidth="215.0" style="-fx-background-color: #dcdcdc; -fx-border-color: #00ced1;" />
+            <TextField fx:id="tfEmailWiederholen" layoutX="225.0" layoutY="135.0" prefHeight="27.0" prefWidth="215.0" style="-fx-background-color: #dcdcdc; -fx-border-color: #00ced1;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

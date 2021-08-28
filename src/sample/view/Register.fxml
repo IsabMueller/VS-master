@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="registrierenPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.RegisterController">
+   <center>
+        <AnchorPane prefHeight="370.0" prefWidth="906.0" style="-fx-background-color: #1c1c1c;" BorderPane.alignment="CENTER">
+            <children>
+            <Label layoutX="474.0" layoutY="18.0" prefHeight="29.0" prefWidth="156.0" style="-fx-border-color: #00ced1;" text="Registrieren" textFill="GAINSBORO">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfRegVorname" layoutX="280.0" layoutY="148.0" prefHeight="26.0" prefWidth="200.0" promptText="Max" style="-fx-border-color: #00ced1;" />
+            <Label layoutX="331.0" layoutY="121.0" text="Vorname" textFill="GAINSBORO">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="tfRegNachname" layoutX="552.0" layoutY="148.0" prefHeight="26.0" prefWidth="200.0" promptText="Mustermann" style="-fx-border-color: #00ced1;" />
+            <Label layoutX="602.0" layoutY="121.0" text="Nachname" textFill="GAINSBORO" />
+            <TextField fx:id="tfRegUsername" layoutX="281.0" layoutY="224.0" prefHeight="26.0" prefWidth="198.0" promptText="Maxinator" style="-fx-border-color: #00ced1;" />
+            <Label layoutX="329.0" layoutY="196.0" text="Username" textFill="GAINSBORO" />
+            <TextField fx:id="tfRegMail" layoutX="280.0" layoutY="295.0" prefHeight="26.0" prefWidth="200.0" promptText="max.mustermann@gmail.com" style="-fx-border-color: #00ced1;" />
+            <Label layoutX="347.0" layoutY="267.0" text="E-Mail" textFill="GAINSBORO" />
+            <TextField fx:id="tfRegPw" layoutX="280.0" layoutY="371.0" prefHeight="26.0" prefWidth="200.0" promptText="* * * * * * * *" style="-fx-border-color: #00ced1;" />
+            <Label layoutX="339.0" layoutY="343.0" text="Passwort" textFill="GAINSBORO" />
+            <TextField fx:id="tfRegPwConfirm" layoutX="552.0" layoutY="371.0" prefHeight="26.0" prefWidth="200.0" promptText="* * * * * * * *" style="-fx-border-color: #00ced1;" />
+            <Label layoutX="578.0" layoutY="335.0" text="Passwort bestätigen" textFill="GAINSBORO" />
+            <ImageView fx:id="RegisterImageView" fitHeight="56.0" fitWidth="61.0" layoutX="772.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Bilder/Register.png" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="533.0" prefWidth="150.0" style="-fx-background-color: #434343;">
+               <children>
+                  <Line endX="-13.2142333984375" endY="-438.0" layoutX="152.0" layoutY="438.0" startX="-153.5071258544922" startY="99.78582763671875" stroke="DARKTURQUOISE" />
+                  <Line endX="-93.2142333984375" endY="-448.0" layoutX="162.0" layoutY="448.0" startX="-162.00001525878906" startY="85.60003662109375" stroke="DARKTURQUOISE" />
+               </children>
+            </Pane>
+            <Button fx:id="btnAbbrechen" layoutX="391.0" layoutY="475.0" mnemonicParsing="false" onAction="#handleBtnAbbrechen" prefHeight="32.0" prefWidth="270.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Abbrechen" textFill="GAINSBORO">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnReg" layoutX="391.0" layoutY="426.0" mnemonicParsing="false" onAction="#submitBtnReg" prefHeight="32.0" prefWidth="271.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Registrieren" textFill="GAINSBORO">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Line endX="646.9857788085938" endY="14.400016784667969" layoutX="195.0" layoutY="60.0" startX="-8.2142333984375" startY="14.4000244140625" stroke="DARKTURQUOISE" />
+            <TextField fx:id="tfRegMailwdh" layoutX="552.0" layoutY="295.0" prefHeight="26.0" prefWidth="200.0" promptText="max.mustermann@gmail.com" style="-fx-border-color: #00ced1;" />
+            <DatePicker fx:id="dpGeburtstag" layoutX="550.0" layoutY="225.0" prefHeight="25.0" prefWidth="205.0" style="-fx-border-color: #00ced1;" />
+                <ImageView fx:id="brandingImageView" fitHeight="35.0" fitWidth="197.0" layoutX="201.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Bilder/Logo.png" />
+                    </image>
+                </ImageView>
+            <Label layoutX="601.0" layoutY="196.0" text="Geburtstag" textFill="GAINSBORO" />
+            <Label layoutX="585.0" layoutY="267.0" text="E-Mail bestätigen" textFill="GAINSBORO" />
+            </children>
+        </AnchorPane>
+   </center>
+</BorderPane>

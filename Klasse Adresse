@@ -1,0 +1,58 @@
+pubilic class Adresse{
+
+  privat String Straße;
+  privat Int Hausnummer;
+  privat String Stadt;
+  privat Int PLZ;
+  
+  public Adresse() {                                                         //Konstruktor
+    Straße = Stadt = ""; 
+    }
+  
+  public Adresse(String Str, Int hn, String city, Int plz){
+  Straße = Str;
+  Hausnummer = hn;
+  Stadt = city;
+  PLZ = plz;
+  }
+  
+  public String getStraße(){                                                      //Methoden
+    return Straße;
+  }
+  public void setStraße(String Str){
+    Straße = Str;
+  }
+  public Int getHnum(){
+    return Hausnummer;
+  }
+    
+  public void setHnum(Int hn){
+    Hausnummer = hn;
+  }
+  
+  public String getWohnort(){
+    return Stadt;
+  }
+    
+  public void setWohnort(String city){
+    Stadt = city;
+  }
+    
+  public Int getpostleitzahl(){
+    return PLZ;
+  }
+  
+  public Int setPostleitzahlt(Int plz){
+    PLZ = plz;
+  }
+  
+  public void Println(){
+    System.out.println(Straße + " " Hausnummer);
+    System.out.println(PLZ + " " + Stadt);
+  }
+  
+  public void Print(){
+    System.out.println(Straße + " " Hausnummer);
+    System.out.print(PLZ + " " + Stadt);
+  }
+}                                                           // Untererteil ist Impro und Copy

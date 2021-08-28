@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="startPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="947.0" style="-fx-background-color: #1C1C1C;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.StartController">
+   <Pane layoutY="-1.0" prefHeight="533.0" prefWidth="150.0" style="-fx-background-color: #434343;">
+      <Line endX="-62.30712890625" endY="-438.0" layoutX="152.0" layoutY="438.0" startX="-153.5071258544922" startY="99.78582763671875" stroke="DARKTURQUOISE" />
+      <Line endX="-117.153564453125" endY="-448.70709228515625" layoutX="162.0" layoutY="448.0" startX="-162.00001525878906" startY="85.60003662109375" stroke="DARKTURQUOISE" />
+   </Pane>
+   <Label layoutX="172.0" layoutY="24.0" prefHeight="41.0" prefWidth="242.0" style="-fx-border-color: #00ced1;" text="Willkommen User!" textFill="GAINSBORO">
+      <font>
+         <Font name="System Bold" size="27.0" />
+      </font>
+   </Label>
+   <Line endX="646.9857788085938" endY="14.400016784667969" layoutX="266.0" layoutY="63.0" startX="-93.20002746582031" startY="14.400009155273438" stroke="DARKTURQUOISE" />
+   <Label layoutX="172.0" layoutY="117.0" prefHeight="41.0" prefWidth="242.0" text="Was liegt an?" textFill="GAINSBORO">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+   </Label>
+   <Button fx:id="btnTerminNew" layoutX="740.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleBtnTerminNew" prefHeight="32.0" prefWidth="170.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Terminerstellen" textFill="GAINSBORO">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="btnLogout" layoutX="740.0" layoutY="457.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="170.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Logout!" textFill="GAINSBORO">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="btnProfil" layoutX="740.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleBtnProfil" prefHeight="32.0" prefWidth="170.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Profil" textFill="GAINSBORO">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="btnUebersicht" layoutX="740.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleBtnUebersicht" prefHeight="32.0" prefWidth="170.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Übersicht" textFill="GAINSBORO">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="btnEinstellungen" layoutX="740.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleBtnEinstellungen" prefHeight="32.0" prefWidth="170.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Einstellungen" textFill="GAINSBORO">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="btnAdressbuch" layoutX="740.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleBtnAdressbuch" prefHeight="32.0" prefWidth="170.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Adressbuch" textFill="GAINSBORO">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <TabPane layoutX="172.0" layoutY="166.0" prefHeight="327.0" prefWidth="536.0" style="-fx-background-color: #473c8b;" tabClosingPolicy="UNAVAILABLE">
+     <tabs>
+       <Tab text="Termine">
+         <content>
+           <AnchorPane fx:id="TerminTabelle" minHeight="0.0" minWidth="0.0" prefHeight="186.0" prefWidth="313.0">
+                  <children>
+                     <ListView layoutX="35.0" layoutY="25.0" prefHeight="218.0" prefWidth="242.0" />
+                     <Button fx:id="btnTerminEdit" layoutX="319.0" layoutY="74.0" mnemonicParsing="false" onAction="#handleBtnTerminEdit" prefHeight="32.0" prefWidth="170.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Termin ändern" textFill="GAINSBORO">
+                        <font>
+                           <Font name="System Bold" size="12.0" />
+                        </font>
+                     </Button>
+                     <Button fx:id="btnTerminLoeschen" layoutX="319.0" layoutY="128.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="170.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Löschen" textFill="GAINSBORO">
+                        <font>
+                           <Font name="System Bold" size="12.0" />
+                        </font>
+                     </Button>
+                     <Button fx:id="btnDetailsTagesübersicht" layoutX="319.0" layoutY="181.0" mnemonicParsing="false" onAction="#handleBtnDetailTagesÜersicht" prefHeight="32.0" prefWidth="170.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Details" textFill="GAINSBORO">
+                        <font>
+                           <Font name="System Bold" size="12.0" />
+                        </font>
+                     </Button>
+                  </children></AnchorPane>
+         </content>
+       </Tab>
+       <Tab text="Notitzen">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+       </Tab>
+         <Tab text="Gemeinsame Termine">
+           <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+           </content>
+         </Tab>
+     </tabs>
+   </TabPane>
+   <Button fx:id="btnTracker" layoutX="740.0" layoutY="409.0" mnemonicParsing="false" onAction="#handleBtnTracker" prefHeight="32.0" prefWidth="170.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Tracker" textFill="GAINSBORO">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+</AnchorPane>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ProfileinstellungenPane" prefHeight="538.0" prefWidth="735.0" style="-fx-background-color: #1c1c1c;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ProfilEinstellungenController">
+   <children>
+      <Pane prefHeight="538.0" prefWidth="171.0" style="-fx-background-color: #434343;">
+         <children>
+            <Line endX="-62.30712890625" endY="-438.0" layoutX="152.0" layoutY="438.0" startX="-153.5071258544922" startY="99.78582763671875" stroke="DARKTURQUOISE" />
+            <Line endX="-117.153564453125" endY="-448.70709228515625" layoutX="162.0" layoutY="448.0" startX="-162.00001525878906" startY="85.60003662109375" stroke="DARKTURQUOISE" />
+         </children>
+      </Pane>
+      <Label layoutX="183.0" layoutY="29.0" prefHeight="41.0" prefWidth="268.0" style="-fx-border-color: #00ced1;" text="Profileinstellungen" textFill="GAINSBORO">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Line endX="646.9857788085938" endY="14.400016784667969" layoutX="276.0" layoutY="73.0" startX="-93.20002746582031" startY="14.400009155273438" stroke="DARKTURQUOISE" />
+      <Button fx:id="btnBackProfileinstellungen" layoutX="836.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleBtnBackProfileinstellungen" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Zurück" textFill="GAINSBORO" />
+      <Label layoutX="182.0" layoutY="110.0" prefHeight="1.0" prefWidth="190.0" text="Username:" textFill="GAINSBORO">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="148.0" prefHeight="1.0" prefWidth="190.0" text="Vorname:" textFill="GAINSBORO">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="187.0" prefHeight="1.0" prefWidth="190.0" text="Nachname:" textFill="GAINSBORO">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="227.0" prefHeight="1.0" prefWidth="190.0" text="Geburtstag:" textFill="GAINSBORO">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="269.0" prefHeight="1.0" prefWidth="190.0" text="Adresse:" textFill="GAINSBORO">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="309.0" prefHeight="1.0" prefWidth="190.0" text="Straße:" textFill="GAINSBORO">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="348.0" prefHeight="1.0" prefWidth="190.0" text="Hausnummer:" textFill="GAINSBORO">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="385.0" prefHeight="1.0" prefWidth="190.0" text="Postleitzahl:" textFill="GAINSBORO">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="421.0" prefHeight="1.0" prefWidth="190.0" text="Stadt:" textFill="GAINSBORO">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="459.0" prefHeight="1.0" prefWidth="190.0" text="Land:" textFill="GAINSBORO">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnChangeAdresse" layoutX="623.0" layoutY="271.0" mnemonicParsing="false" onAction="#handleBtnChangeAdresse" prefHeight="26.0" prefWidth="80.0" text="ändern" />
+      <Button fx:id="btnChangeNachname" layoutX="623.0" layoutY="189.0" mnemonicParsing="false" onAction="#handleBtnChangeNachname" prefHeight="26.0" prefWidth="80.0" text="ändern" />
+      <Button fx:id="btnChangeVorname" layoutX="623.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleBtnChangeVorname" prefHeight="26.0" prefWidth="80.0" text="ändern" />
+      <Button fx:id="btnChangeUsername" layoutX="623.0" layoutY="112.0" mnemonicParsing="false" onAction="#handleBtnChangeUsername" prefHeight="26.0" prefWidth="80.0" text="ändern" />
+      <Button fx:id="btnChangeGeburtstag" layoutX="623.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleBtnChangeGeburtstag" prefHeight="26.0" prefWidth="80.0" text="ändern" />
+      <Label layoutX="372.0" layoutY="110.0" prefHeight="27.0" prefWidth="211.0" style="-fx-background-color: #473c8b;" text="Label" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="227.0" prefHeight="27.0" prefWidth="211.0" style="-fx-background-color: #473c8b;" text="Label" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="187.0" prefHeight="27.0" prefWidth="211.0" style="-fx-background-color: #473c8b;" text="Label" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="148.0" prefHeight="27.0" prefWidth="211.0" style="-fx-background-color: #473c8b;" text="Label" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="383.0" prefHeight="27.0" prefWidth="211.0" style="-fx-background-color: #473c8b;" text="Label" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="307.0" prefHeight="27.0" prefWidth="211.0" style="-fx-background-color: #473c8b;" text="Label" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="346.0" prefHeight="27.0" prefWidth="211.0" style="-fx-background-color: #473c8b;" text="Label" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="419.0" prefHeight="27.0" prefWidth="211.0" style="-fx-background-color: #473c8b;" text="Label" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="457.0" prefHeight="27.0" prefWidth="211.0" style="-fx-background-color: #473c8b;" text="Label" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

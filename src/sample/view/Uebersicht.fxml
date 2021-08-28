@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="uebersichtPane" prefHeight="538.0" prefWidth="735.0" style="-fx-background-color: #1c1c1c;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.UebersichtController">
+   <children>
+      <Pane prefHeight="538.0" prefWidth="171.0" style="-fx-background-color: #434343;">
+         <children>
+            <Line endX="-62.30712890625" endY="-438.0" layoutX="152.0" layoutY="438.0" startX="-153.5071258544922" startY="99.78582763671875" stroke="DARKTURQUOISE" />
+            <Line endX="-117.153564453125" endY="-448.70709228515625" layoutX="162.0" layoutY="448.0" startX="-162.00001525878906" startY="85.60003662109375" stroke="DARKTURQUOISE" />
+         </children>
+      </Pane>
+      <Label layoutX="183.0" layoutY="29.0" prefHeight="41.0" prefWidth="242.0" style="-fx-border-color: #00ced1;" text="Übersicht" textFill="GAINSBORO">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Line endX="646.9857788085938" endY="14.400016784667969" layoutX="276.0" layoutY="73.0" startX="-93.20002746582031" startY="14.400009155273438" stroke="DARKTURQUOISE" />
+      <Button fx:id="btnBackUebersicht" layoutX="836.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleBtnBackUebersicht" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Zurück" textFill="GAINSBORO" />
+      <Button fx:id="btnTagesübersicht" layoutX="372.0" layoutY="155.0" mnemonicParsing="false" onAction="#handleBtnTagesübersicht" prefHeight="60.0" prefWidth="362.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Tagesübersicht" textFill="GAINSBORO" />
+      <Button fx:id="btnMonatsübersicht" layoutX="372.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleBtnMonatsübersicht" prefHeight="60.0" prefWidth="362.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Monatsübersicht" textFill="GAINSBORO" />
+      <Button fx:id="btnWochenübersicht" layoutX="372.0" layoutY="249.0" mnemonicParsing="false" onAction="#handleBtnWochenübersicht" prefHeight="60.0" prefWidth="362.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Wochenübersicht" textFill="GAINSBORO" />
+      <Button fx:id="btnJahresübersicht" layoutX="372.0" layoutY="432.0" mnemonicParsing="false" onAction="#handleBtnJahresübersicht" prefHeight="60.0" prefWidth="362.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Jahresübersicht" textFill="GAINSBORO" />
+   </children>
+</AnchorPane>
