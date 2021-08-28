@@ -113,7 +113,7 @@ public class RegisterController {
             Mailwdh = tfRegMailwdh.getText();
             Passwort = tfRegPw.getText();
             Passwortwdh = tfRegPwConfirm.getText();
-
+            id = 0;     // id aufzählung? wie?
 
         if (Mail.equals(Mailwdh) && Passwort.equals(Passwortwdh)) {
 

@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="536.0" prefWidth="680.0" style="-fx-background-color: #1c1c1c;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.TerminOkController">
    <children>
-      <Button fx:id="btnOK" layoutX="338.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleBtnOK" prefHeight="42.0" prefWidth="143.0" style="-fx-background-color: #473c8b;" text="OK" textFill="GAINSBORO" />
+      <Button fx:id="btnOK" layoutX="338.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleBtnOK" prefHeight="42.0" prefWidth="143.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="OK" textFill="GAINSBORO" />
       <Pane prefHeight="536.0" prefWidth="150.0" style="-fx-background-color: #434343;">
          <children>
             <Line endX="-62.30712890625" endY="-438.0" layoutX="152.0" layoutY="438.0" startX="-153.5071258544922" startY="99.78582763671875" stroke="DARKTURQUOISE" />

@@ -41,8 +41,7 @@ public class LoginController{
     public void submitBtnLogin(ActionEvent event) {
         Username = getTfUsername();
         Password = getTfPassword();
-       // hashCode(Password);
-        // if else mit http request auf übereinstimmung von username und passwort überprüfen
+
 
     }
 
