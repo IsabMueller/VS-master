@@ -9,18 +9,29 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.event.ActionEvent;
 import org.apache.http.HttpEntity;
+import org.apache.http.HttpHost;
+import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
+import org.apache.http.auth.AuthScope;
+import org.apache.http.auth.UsernamePasswordCredentials;
+import org.apache.http.client.AuthCache;
 import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.CredentialsProvider;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.protocol.HttpClientContext;
+import org.apache.http.impl.auth.BasicScheme;
+import org.apache.http.impl.client.BasicAuthCache;
+import org.apache.http.impl.client.BasicCredentialsProvider;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
+import org.junit.Test;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -65,6 +76,7 @@ public class LoginController{
                     List<NameValuePair> nvps = new ArrayList<>();
                     nvps.add(new BasicNameValuePair("username", Username));
                     nvps.add(new BasicNameValuePair("password", Password));
+//request token
                     try {
                         httpPost.setEntity(new UrlEncodedFormEntity(nvps));
                     } catch (UnsupportedEncodingException e) {
@@ -79,6 +91,8 @@ public class LoginController{
                         try (OutputStream outputStream = Files.newOutputStream(Paths.get("post.txt"))) {
                             long length = entity2.getContent().transferTo(outputStream);
                             System.out.println("Bytes uebertragen: " + length);
+                            //weiter zu start
+                            //auth abfrage schaffen!
                             AnchorPane newPane = null;
                             try {
                                 newPane = FXMLLoader.load(getClass().getResource("../view/Start.FXML"));
@@ -94,7 +108,7 @@ public class LoginController{
                     }
                 }
             }
-        }
+    }
 
 
     public void handleBtnCancel(ActionEvent event) {
@@ -108,7 +122,3 @@ public class LoginController{
         loginPane.getChildren().setAll(newPane);
     }
 }
-
-
-
-

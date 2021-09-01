@@ -91,47 +91,49 @@ public class RegisterController {
     }
 
 
-    public String Vorname;
-    public String Nachname;
-    public String Username;
-    public String Mail;
-    public String Mailwdh;
-    public String Passwort;
-    public String Passwortwdh;
-    public LocalDate Geburtsdatum;
+    public String firstName;
+    public String lastName;
+    public String username;
+    public String mail;
+    public String mailRepeat;
+    public String password;
+    public String passwordRepeat;
+    public LocalDate birthday;
     private int id;
 
 
 
     public void submitBtnReg(ActionEvent event) {
 
-            Vorname = tfRegVorname.getText();
-            Nachname = tfRegNachname.getText();
-            Username = tfRegUsername.getText();
-            Geburtsdatum = dpGeburtstag.getValue();
-            Mail = tfRegMail.getText();
-            Mailwdh = tfRegMailwdh.getText();
-            Passwort = tfRegPw.getText();
-            Passwortwdh = tfRegPwConfirm.getText();
+            firstName = tfRegVorname.getText();
+            lastName = tfRegNachname.getText();
+            username = tfRegUsername.getText();
+            birthday = dpGeburtstag.getValue();
+            mail = tfRegMail.getText();
+            mailRepeat = tfRegMailwdh.getText();
+            password = tfRegPw.getText();
+            passwordRepeat = tfRegPwConfirm.getText();
             id = 0;     // id aufzählung? wie?
 
-        if (Mail.equals(Mailwdh) && Passwort.equals(Passwortwdh)) {
-
-            System.out.println(Vorname);
-            System.out.println(Nachname);
-            System.out.println(Username);
-            System.out.println(Mail);
-            System.out.println(Mailwdh);
-            System.out.println(Geburtsdatum);
-            System.out.println(Passwort);
-            System.out.println(Passwortwdh);
-
-        }
-        else if (Vorname.isEmpty() || Nachname.isEmpty() || Username.isEmpty() || Mail.isEmpty() || Mailwdh.isEmpty() || Passwort.isEmpty() || Passwort.isEmpty()){
+        if (firstName.isEmpty() || lastName.isEmpty() || username.isEmpty() || mail.isEmpty() || mailRepeat.isEmpty() || password.isEmpty() || password.isEmpty()){
             System.out.println("Felder ausfüllen");
+        }
+        else if (mail.equals(mailRepeat) && password.equals(passwordRepeat)) {
+
+            System.out.println(firstName);
+            System.out.println(lastName);
+            System.out.println(username);
+            System.out.println(mail);
+            System.out.println(mailRepeat);
+            System.out.println(birthday);
+            System.out.println(password);
+            System.out.println(passwordRepeat);
+
+
         }
         else {
             System.out.println("Fehler!");
+            //fensterpopup
         }
     }
 

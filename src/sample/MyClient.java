@@ -62,7 +62,7 @@ public class MyClient {
                 try (OutputStream outputStream = Files.newOutputStream(Paths.get("post.txt"))) {
                     long length = entity2.getContent().transferTo(outputStream);
                     System.out.println("Bytes uebertragen: " + length);
-                    //   terminService.saveTermin(new TerminEntity());
+                  //    terminService.saveTermin(new TerminEntity());
                 }
             }
         }
