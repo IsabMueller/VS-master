@@ -23,7 +23,7 @@
       </AnchorPane>
    </left>
    <right>
-      <AnchorPane prefHeight="407.0" prefWidth="292.0" style="-fx-background-color: #1c1c1c;" BorderPane.alignment="CENTER">
+      <AnchorPane fx:id="paneLogin" prefHeight="407.0" prefWidth="292.0" style="-fx-background-color: #1c1c1c;" BorderPane.alignment="CENTER">
          <children>
             <ImageView fx:id="lockImageView" fitHeight="32.0" fitWidth="46.0" layoutX="119.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
                <image>

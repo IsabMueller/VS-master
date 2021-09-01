@@ -19,8 +19,8 @@ public class Main extends Application {
     public void start(Stage primaryStage)
     {
         try {
-            final FXMLLoader loader = new FXMLLoader(getClass().getResource("view/Start.fxml"));
-            final Parent root = (Parent) loader.load();
+            final FXMLLoader loader = new FXMLLoader(getClass().getResource("../sample/view/Willkommen.fxml"));
+            final Parent root = loader.load();
             Scene scene = new Scene(root);
             primaryStage.setTitle("Sharing Time");
             primaryStage.setScene(scene);
