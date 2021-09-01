@@ -33,7 +33,7 @@
             <TreeTableColumn prefWidth="155.20001220703125" text="E-Mail" />
         </columns>
       </TreeTableView>
-      <Button fx:id="btnAddFriend" layoutX="689.0" layoutY="149.0" mnemonicParsing="false" onAction="#handlebtnaddfriends" prefHeight="16.0" prefWidth="171.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Hinzufügen" textFill="GAINSBORO" />
+      <Button fx:id="btnAddFriend" layoutX="689.0" layoutY="149.0" mnemonicParsing="false" onAction="#btnhandleaddfriends" prefHeight="16.0" prefWidth="171.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Hinzufügen" textFill="GAINSBORO" />
       <Button fx:id="btnEditFriend" layoutX="689.0" layoutY="205.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="171.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Bearbeiten" textFill="GAINSBORO" />
       <Button fx:id="btnDelFriend" layoutX="689.0" layoutY="255.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="171.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Löschen" textFill="GAINSBORO" />
    </children>

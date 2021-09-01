@@ -27,8 +27,8 @@ public class AdressbuchController {
         neuerKalenderPane.getChildren().setAll(newPane);
     }
 
-    public void handlebtnaddfriends(ActionEvent event) throws IOException {
-        AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/KontaktHinzufügen.fxml"));
+    public void btnhandleaddfriends(ActionEvent event) throws IOException {
+        AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/AdressbuchHinzufügen.fxml"));
         neuerKalenderPane.getChildren().setAll(newPane);
     }
 }
