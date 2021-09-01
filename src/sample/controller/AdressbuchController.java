@@ -30,6 +30,6 @@ public class AdressbuchController {
     public void btnhandleaddfriends(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/AdressbuchHinzufügen.fxml"));
         neuerKalenderPane.getChildren().setAll(newPane);
-    }
+    }//Safe
 }
 
