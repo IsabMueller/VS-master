@@ -12,6 +12,8 @@ import java.io.IOException;
 
 public class AdressbuchController {
     @FXML
+    private Button btnEditFriend;
+    @FXML
     private Button btnAddFriend;
     @FXML
     private AnchorPane neuerKalenderPane;
@@ -30,6 +32,11 @@ public class AdressbuchController {
     public void btnhandleaddfriends(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/AdressbuchHinzufügen.fxml"));
         neuerKalenderPane.getChildren().setAll(newPane);
-    }//Safe
+    }//Safe BtnHandleEditFriends
+
+    public void BtnHandleEditFriends(ActionEvent event) throws IOException {
+        AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/KontaktBearbeiten.fxml"));
+        neuerKalenderPane.getChildren().setAll(newPane);
+    }
 }
 
