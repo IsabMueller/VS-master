@@ -23,8 +23,6 @@ public class KategorienVerwaltenController {
     @FXML
     private Button btnKategorienAdd;
     @FXML
-    private ColorPicker colorpickerKategorien;
-    @FXML
     private ListView listKategorie;
     @FXML
     private TextField tfKategorieName;
@@ -49,10 +47,11 @@ public class KategorienVerwaltenController {
     public TextField getTfKategorieName(){
         return tfKategorieName;
     }
-    public void ChangeColor(ActionEvent event){
-        Color Katcolor = colorpickerKategorien.getValue();
-        tfKategorieName.setBackground(new Background(new BackgroundFill(Katcolor, null, null)));
-    }
+    //Colorpicker
+    //public void ChangeColor(ActionEvent event){
+    //    Color Katcolor = colorpickerKategorien.getValue();
+    //    tfKategorieName.setBackground(new Background(new BackgroundFill(Katcolor, null, null)));
+    //}
 
     public void submitKat(ActionEvent event) {
         kategorie = tfKategorieName.getText();
