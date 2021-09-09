@@ -8,6 +8,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.event.ActionEvent;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpHost;
 import org.apache.http.HttpResponse;
@@ -62,13 +64,18 @@ public class LoginController{
 
     public String Username;
     public String Password;
+    public Stage window;
 
 
-    public void submitBtnLogin(ActionEvent event) {
+
+    public void submitBtnLogin(ActionEvent event) throws IOException {
         Username = tfUsername.getText();
         Password = tfPassword.getText();
             if (Username.isEmpty()||Password.isEmpty()){
                 System.out.println("Fehler!");
+                //StackPane layout = new window("../view/Error.fxml");
+                AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Error.fxml"));
+                loginPane.getChildren().setAll(newPane);
             }
             else {
                 CloseableHttpClient httpclient = HttpClients.createDefault(); {
