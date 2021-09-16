@@ -9,11 +9,18 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
-
+import org.apache.http.NameValuePair;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.message.BasicHeader;
+import org.apache.http.message.BasicNameValuePair;
 
 
 import java.io.IOException;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class RegisterController {
@@ -131,6 +138,22 @@ public class RegisterController {
 
 
         }
+
+        else if (mail.equals(mailRepeat) && password.equals(passwordRepeat)) {
+            CloseableHttpClient httpClient = HttpClients.createDefault(); {
+                HttpPost httpPost = new HttpPost("https://www.sharing-time.rest/auth/register");
+                List<NameValuePair> nvps = new ArrayList<>();
+                nvps.add(new BasicNameValuePair("firstname", firstName));
+                nvps.add(new BasicNameValuePair("lastname", lastName));
+                nvps.add(new BasicNameValuePair("username", username));
+                nvps.add(new BasicNameValuePair("mail", mail));
+                nvps.add(new BasicNameValuePair("birthday", birthday));
+                nvps.add(new BasicNameValuePair("password", password));
+
+            }
+        }
+
+
         else {
             System.out.println("Fehler!");
             //fensterpopup

@@ -24,10 +24,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" exported="" name="lib" level="project" />
-    <orderEntry type="library" exported="" name="javafx" level="project" />
-    <orderEntry type="library" exported="" name="javafx" level="project" />
-    <orderEntry type="library" exported="" name="javafx" level="project" />
-    <orderEntry type="library" name="commons-logging-1.21" level="project" />
-    <orderEntry type="library" exported="" name="commons-logging-1.2(1)" level="project" />
+    <orderEntry type="library" exported="" name="Commons" level="project" />
   </component>
 </module>
