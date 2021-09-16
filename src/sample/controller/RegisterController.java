@@ -5,7 +5,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
@@ -13,12 +12,10 @@ import org.apache.http.NameValuePair;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
-import org.apache.http.message.BasicHeader;
 import org.apache.http.message.BasicNameValuePair;
 
 
 import java.io.IOException;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -71,8 +68,8 @@ public class RegisterController {
         return tfRegVorname;
     }
 
-    public DatePicker getDpGeburtstag() {
-        return dpGeburtstag;
+    public TextField getTfGeburtstag() {
+        return tfBirthday;
     }
 
     public TextField getTfRegNachname() {
@@ -117,7 +114,7 @@ public class RegisterController {
             firstName = tfRegVorname.getText();
             lastName = tfRegNachname.getText();
             username = tfRegUsername.getText();
-            birthday = tfBirth();
+            birthday = tfBirthday.getText();
             mail = tfRegMail.getText();
             mailRepeat = tfRegMailwdh.getText();
             password = tfRegPw.getText();
