@@ -32,7 +32,7 @@
          </font>
       </Label>
       <Button fx:id="btnBack" layoutX="826.0" layoutY="31.0" mnemonicParsing="false" onAction="#handleBtnBack" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Zurück" textFill="GAINSBORO" />
-      <Button fx:id="btnOK" layoutX="834.0" layoutY="475.0" mnemonicParsing="false" onAction="#handleBtnOK" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="OK" textFill="GAINSBORO" />
+      <Button fx:id="btnOK" layoutX="834.0" layoutY="475.0" mnemonicParsing="false" onAction="#submitBtnOK" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="OK" textFill="GAINSBORO" />
       <Line endX="646.9857788085938" endY="14.400016784667969" layoutX="266.0" layoutY="63.0" startX="-93.20002746582031" startY="14.400009155273438" stroke="DARKTURQUOISE" />
       <Label layoutX="181.0" layoutY="323.0" prefHeight="26.0" prefWidth="86.0" text="Ort:" textFill="GAINSBORO" underline="true">
          <font>
@@ -88,6 +88,7 @@
          </font>
       </Label>
       <ComboBox fx:id="comboboxErinnerung" layoutX="443.0" layoutY="110.0" prefHeight="26.0" prefWidth="170.0" promptText="Default" />
+      <ComboBox fx:id="ComboboxWiederholen" layoutX="647.0" layoutY="109.0" prefHeight="26.0" prefWidth="170.0" promptText="Default" />
       <Label layoutX="647.0" layoutY="83.0" prefHeight="26.0" prefWidth="144.0" text="Termin Wiederholen? " textFill="GAINSBORO" underline="true">
          <font>
             <Font size="13.0" />
@@ -99,6 +100,5 @@
          </font>
       </CheckBox>
       <ColorPicker fx:id="ChangeColorTermin" layoutX="659.0" layoutY="162.0" />
-      <CheckBox layoutX="647.0" layoutY="115.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="55.0" text="ja" textFill="GAINSBORO" />
    </children>
 </AnchorPane>

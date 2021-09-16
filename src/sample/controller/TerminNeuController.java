@@ -47,6 +47,9 @@ public class TerminNeuController {
         terminNeuPane.getChildren().setAll(newPane);
     }
 
+    public void submitBtnOK(ActionEvent event) {
+    }
+
 
 
 
@@ -65,6 +68,5 @@ public class TerminNeuController {
      * Controller zum Erstellen eines neuen Termins
      * @param actionEvent
      */
-    public void handleBtnOK(ActionEvent actionEvent) {
-    }
+ 
 }
