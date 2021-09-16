@@ -8,14 +8,17 @@ import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 
+
 public class TerminNeuController {
 
-    @FXML
-    private ColorPicker ChangeColorTermin;
-    @FXML
-    private ComboBox comboboxErinnerung;
-    @FXML
-    private ComboBox comboboxKategorie;
+   // @FXML
+    //private ComboBox ComboboxWiederholen;
+  //  @FXML
+   // private ColorPicker ChangeColorTermin;
+  //  @FXML
+  //  private ComboBox comboboxErinnerung;
+   // @FXML
+   // private ComboBox comboboxKategorie;
     @FXML
     private TextField tfBisMin;
     @FXML
@@ -35,6 +38,14 @@ public class TerminNeuController {
     @FXML
     private Button btnBack;
 
+    public String vonStd;
+    public String vonMin;
+    public String bisStd;
+    public String bisMin;
+    public String terminName;
+  //  public Date date;
+
+
 
     /**
      * Zurück zum GUI "Start"
@@ -47,26 +58,29 @@ public class TerminNeuController {
         terminNeuPane.getChildren().setAll(newPane);
     }
 
-    public void submitBtnOK(ActionEvent event) {
-    }
-
-
-
-
-    /*
-    combobox wiederholen füllen
-    private void loadReminder() {
-        comboboxErinnerung.getItems().add("keine Erinnerung");
-        comboboxErinnerung.getItems().add("15m");
-        comboboxErinnerung.getItems().add("30m");
-        comboboxErinnerung.getItems().add("1h");
-        comboboxErinnerung.getItems().add("2h");
-        comboboxErinnerung.getSelectionModel().select(2);
-    }*/
-
     /**
      * Controller zum Erstellen eines neuen Termins
      * @param actionEvent
      */
- 
+
+    public void submitBtnOK(ActionEvent actionEvent) {
+
+        vonMin = tfVonMin.getText();
+        vonStd = tfVonStd.getText();
+        bisMin = tfBisMin.getText();
+        bisStd = tfBisStd.getText();
+        terminName = textFieldName.getText();
+
+        System.out.println(vonStd);
+        System.out.println(vonMin);
+        System.out.println(bisMin);
+        System.out.println(bisStd);
+        System.out.println(terminName);
+      //  LocalDate date = dpTerminNeu.getValue();
+
+
+    }
+
+
+
 }

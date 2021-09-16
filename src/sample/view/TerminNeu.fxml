@@ -12,6 +12,8 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
 <AnchorPane fx:id="terminNeuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="947.0" style="-fx-background-color: #1C1C1C;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.TerminNeuController">
    <children>
       <Pane layoutY="-1.0" prefHeight="533.0" prefWidth="150.0" style="-fx-background-color: #434343;">
@@ -88,7 +90,7 @@
          </font>
       </Label>
       <ComboBox fx:id="comboboxErinnerung" layoutX="443.0" layoutY="110.0" prefHeight="26.0" prefWidth="170.0" promptText="Default" />
-      <ComboBox fx:id="ComboboxWiederholen" layoutX="647.0" layoutY="109.0" prefHeight="26.0" prefWidth="170.0" promptText="Default" />
+      <ComboBox fx:id="ComboboxWiederholen" layoutX="647.0" layoutY="109.0" prefHeight="26.0" prefWidth="170.0" promptText="Default"/>
       <Label layoutX="647.0" layoutY="83.0" prefHeight="26.0" prefWidth="144.0" text="Termin Wiederholen? " textFill="GAINSBORO" underline="true">
          <font>
             <Font size="13.0" />
