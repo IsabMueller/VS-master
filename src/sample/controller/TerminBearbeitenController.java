@@ -4,7 +4,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
@@ -13,6 +15,18 @@ import java.io.IOException;
 public class TerminBearbeitenController {
 
 
+    @FXML
+    private TextField tfVonStd;
+    @FXML
+    private TextField tfVonMin;
+    @FXML
+    private TextField tfBisMin;
+    @FXML
+    private TextField tfBisStd;
+    @FXML
+    private TextField textFieldName;
+    @FXML
+    private ComboBox comboboxKategorie;
     @FXML
     private DatePicker dpTerminEdit;
     @FXML

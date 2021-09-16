@@ -12,6 +12,8 @@ import java.io.IOException;
 
 public class EinstellungenAendernUsernameController {
     @FXML
+    private Button btnChangedUsername;
+    @FXML
     private TextField tfChangedUsername;
     @FXML
     private Button btnBackSettings;

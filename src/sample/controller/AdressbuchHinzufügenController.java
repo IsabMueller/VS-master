@@ -11,6 +11,8 @@ import java.io.IOException;
 
 public class AdressbuchHinzufügenController {
     @FXML
+    private Button btnaddfriend;
+    @FXML
     private Button btnBackProfileinstellungen;
     @FXML
     private AnchorPane Kontakthinzufügen;

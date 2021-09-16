@@ -12,8 +12,13 @@ import java.io.IOException;
 public class TerminNeuController {
 
 
-
-   @FXML
+    @FXML
+    private ComboBox comboboxErinnerung;
+    @FXML
+    private ColorPicker ChangeColorTermin;
+    @FXML
+    private ComboBox comboboxKategorie;
+    @FXML
    private ComboBox ComboboxWiederholen;
   //  @FXML
    // private ColorPicker ChangeColorTermin;

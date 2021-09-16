@@ -6,19 +6,17 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.AutoRetryHttpClient;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
-
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -32,7 +30,14 @@ import java.util.List;
 public class RegisterController {
 
 
-
+    @FXML
+    private Button btnReg;
+    @FXML
+    private ImageView brandingImageView;
+    @FXML
+    private TextField tfBirthday;
+    @FXML
+    private ImageView RegisterImageView;
     //@FXML
    // private TextField tfBirthday;
     @FXML

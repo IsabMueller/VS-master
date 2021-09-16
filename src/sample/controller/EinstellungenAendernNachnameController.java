@@ -12,6 +12,8 @@ import java.io.IOException;
 
 public class EinstellungenAendernNachnameController {
     @FXML
+    private Button btnChangedNachname;
+    @FXML
     private TextField tfChangedNachname;
     @FXML
     private Pane NachnameChangePane;
