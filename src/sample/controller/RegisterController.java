@@ -25,8 +25,10 @@ import java.util.List;
 
 public class RegisterController {
 
+
+
     @FXML
-    private DatePicker dpGeburtstag;
+    private TextField tfBirthday;
     @FXML
     private TextField tfRegMailwdh;
     @FXML
@@ -105,7 +107,7 @@ public class RegisterController {
     public String mailRepeat;
     public String password;
     public String passwordRepeat;
-    public LocalDate birthday;
+    public String birthday;
     private int id;
 
 
@@ -115,7 +117,7 @@ public class RegisterController {
             firstName = tfRegVorname.getText();
             lastName = tfRegNachname.getText();
             username = tfRegUsername.getText();
-            birthday = dpGeburtstag.getValue();
+            birthday = tfBirth();
             mail = tfRegMail.getText();
             mailRepeat = tfRegMailwdh.getText();
             password = tfRegPw.getText();
@@ -139,7 +141,7 @@ public class RegisterController {
 
         }
 
-        else if (mail.equals(mailRepeat) && password.equals(passwordRepeat)) {
+        else if (mail.equals(mailRepeat) && password.equals(passwordRepeat)||password.equals(passwordRepeat)&&passwordRepeat.equals(password)) {
             CloseableHttpClient httpClient = HttpClients.createDefault(); {
                 HttpPost httpPost = new HttpPost("https://www.sharing-time.rest/auth/register");
                 List<NameValuePair> nvps = new ArrayList<>();

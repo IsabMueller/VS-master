@@ -88,7 +88,6 @@
          </font>
       </Label>
       <ComboBox fx:id="comboboxErinnerung" layoutX="443.0" layoutY="110.0" prefHeight="26.0" prefWidth="170.0" promptText="Default" />
-      <ComboBox fx:id="ComboboxWiederholen" layoutX="647.0" layoutY="109.0" prefHeight="26.0" prefWidth="170.0" promptText="Default" />
       <Label layoutX="647.0" layoutY="83.0" prefHeight="26.0" prefWidth="144.0" text="Termin Wiederholen? " textFill="GAINSBORO" underline="true">
          <font>
             <Font size="13.0" />
@@ -100,5 +99,6 @@
          </font>
       </CheckBox>
       <ColorPicker fx:id="ChangeColorTermin" layoutX="659.0" layoutY="162.0" />
+      <CheckBox layoutX="647.0" layoutY="115.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="55.0" text="ja" textFill="GAINSBORO" />
    </children>
 </AnchorPane>
