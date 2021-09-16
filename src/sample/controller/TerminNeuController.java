@@ -11,8 +11,10 @@ import java.io.IOException;
 
 public class TerminNeuController {
 
-   // @FXML
-    //private ComboBox ComboboxWiederholen;
+
+
+   @FXML
+   private ComboBox ComboboxWiederholen;
   //  @FXML
    // private ColorPicker ChangeColorTermin;
   //  @FXML
@@ -47,6 +49,7 @@ public class TerminNeuController {
 
 
 
+
     /**
      * Zurück zum GUI "Start"
      * @param event
@@ -77,6 +80,15 @@ public class TerminNeuController {
         System.out.println(bisStd);
         System.out.println(terminName);
       //  LocalDate date = dpTerminNeu.getValue();
+
+
+
+     //   ComboboxWiederholen = new ComboBox<String>();
+     //   ComboboxWiederholen.getItems().add(
+     //           "Hallo"
+     //   );
+
+     //   ComboboxWiederholen.setPromptText("HALLO TEST!");
 
 
     }
