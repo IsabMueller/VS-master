@@ -171,17 +171,27 @@ public class RegisterController {
                     try (OutputStream outputStream = Files.newOutputStream(Paths.get("post1.txt"))) {
                         long length = entity2.getContent().transferTo(outputStream);
                         System.out.println("Bytes uebertragen: " + length);
-
+                        AnchorPane newPane = null;
+                        try {
+                            newPane = FXMLLoader.load(getClass().getResource("../view/Start.FXML"));
+                        }
+                        catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                     registrierenPane.getChildren().setAll(newPane);
                     }
-                } catch (ClientProtocolException e) {
-                    e.printStackTrace();
+
                 } catch (IOException e) {
                     e.printStackTrace();
+                }
+
+                }
+                }
                 }
             }
 
 
-        }
 
-        }
-    }
+
+
+
