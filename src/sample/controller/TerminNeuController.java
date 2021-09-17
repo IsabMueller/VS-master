@@ -45,6 +45,7 @@ public class TerminNeuController {
     @FXML
     private Button btnBack;
 
+    public String Erinnerung;
     public String vonStd;
     public String vonMin;
     public String bisStd;
@@ -54,11 +55,23 @@ public class TerminNeuController {
 
 
 
+private void setErinnerung(){
+        comboboxErinnerung.getItems().add("Nein");
+        comboboxErinnerung.getItems().add("5 Minuten");
+        comboboxErinnerung.getItems().add("10 Minuten");
+        comboboxErinnerung.getItems().add("30 Minuten");
+        comboboxErinnerung.getItems().add("1 Stunde");
+        comboboxErinnerung.getItems().add("2 Stunden");
+        comboboxErinnerung.getItems().add("5 Stunden");
+        comboboxErinnerung.getItems().add("1 Tag");
+        comboboxErinnerung.getItems().addAll("N","EE","ADFA");
+        comboboxErinnerung.getSelectionModel().select(2);
+    }
+
 
     /**
      * Zurück zum GUI "Start"
      * @param event
-     * @throws IOException
      */
     @FXML
     public void handleBtnBack(ActionEvent event) throws IOException{
@@ -78,22 +91,18 @@ public class TerminNeuController {
         bisMin = tfBisMin.getText();
         bisStd = tfBisStd.getText();
         terminName = textFieldName.getText();
+        Erinnerung = (String) comboboxErinnerung.getSelectionModel().getSelectedItem();
 
         System.out.println(vonStd);
         System.out.println(vonMin);
         System.out.println(bisMin);
         System.out.println(bisStd);
         System.out.println(terminName);
+        System.out.println(Erinnerung);
       //  LocalDate date = dpTerminNeu.getValue();
 
 
 
-     //   ComboboxWiederholen = new ComboBox<String>();
-     //   ComboboxWiederholen.getItems().add(
-     //           "Hallo"
-     //   );
-
-     //   ComboboxWiederholen.setPromptText("HALLO TEST!");
 
 
     }
