@@ -51,7 +51,7 @@ public class ProfilController {
             // connection cannot be safely re-used and will be shut down and discarded
             // by the connection manager.
             try (CloseableHttpResponse response1 = httpclient.execute(httpGet)) {
-                // System.out.println(response1.getCode() + " " + response1.getReasonPhrase());
+                // System.out.println(response1.getCode() + " " + response1.getReasonPhrase());.
                 HttpEntity entity1 = response1.getEntity();
                 // EntityUtils.consume(entity1);
                 //FileWriter fileWriter = new FileWriter("result.json");
