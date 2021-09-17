@@ -7,9 +7,11 @@ import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 
-public class TerminNeuController {
+class TerminNeuControlle{
 
 
     @FXML
@@ -53,9 +55,9 @@ public class TerminNeuController {
     public String terminName;
   //  public Date date;
 
-
-
-private void setErinnerung(){
+/*
+// keine Anzeige in box
+    private void loadErinnerung() {
         comboboxErinnerung.getItems().add("Nein");
         comboboxErinnerung.getItems().add("5 Minuten");
         comboboxErinnerung.getItems().add("10 Minuten");
@@ -64,9 +66,9 @@ private void setErinnerung(){
         comboboxErinnerung.getItems().add("2 Stunden");
         comboboxErinnerung.getItems().add("5 Stunden");
         comboboxErinnerung.getItems().add("1 Tag");
-        comboboxErinnerung.getItems().addAll("N","EE","ADFA");
         comboboxErinnerung.getSelectionModel().select(2);
     }
+*/
 
 
     /**
@@ -86,6 +88,11 @@ private void setErinnerung(){
 
     public void submitBtnOK(ActionEvent actionEvent) {
 
+        int vMin = 0;
+        int vStd = 0;
+        int bMin = 0;
+        int bStd = 0;
+
         vonMin = tfVonMin.getText();
         vonStd = tfVonStd.getText();
         bisMin = tfBisMin.getText();
@@ -103,6 +110,10 @@ private void setErinnerung(){
 
 
 
+    vMin=Integer.parseInt(vonMin);
+    vStd=Integer.parseInt(vonStd);
+    bMin=Integer.parseInt(bisMin);
+    bStd=Integer.parseInt(bisStd);
 
 
     }
