@@ -59,7 +59,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="259.0" layoutY="147.0" prefHeight="27.0" prefWidth="149.0" style="-fx-background-color: #473c8b;" text="Username" textFill="#d0d0d0">
+      <Label fx:id="lbUsername" layoutX="259.0" layoutY="147.0" prefHeight="27.0" prefWidth="149.0" style="-fx-background-color: #473c8b;" text="Username" textFill="#d0d0d0">
          <font>
             <Font size="18.0" />
          </font>

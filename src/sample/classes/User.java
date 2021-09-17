@@ -1,20 +1,23 @@
-/* package sample.classes;
+/*package sample.classes;
 
 import java.time.LocalDate;
 
 public class User {
-    private int id;
+
     private String firstName;
     private String lastName;
     private String username;
-    private LocalDate birthday;
+    //private LocalDate birthday;
     private String password;
     private String mail;
     private Boolean locked;
     private Boolean enabled;
 
-    public User(int id, String firstName, String lastName, String username, LocalDate birthday, String password, String mail){
-        return;
+    public  User add (int id, String firstName, String lastName, String username, LocalDate birthday, String password, String mail){
+
+
+      return ;
+
     }
 
     public User() {
@@ -57,9 +60,9 @@ public class User {
         return birthday;
     }
 
-    public void setBirthday(LocalDate birthday) {
-        this.birthday = birthday;
-    }
+  //  public void setBirthday(LocalDate birthday) {
+       // this.birthday = birthday;
+  //  }
 
     public String getPassword(){
         return password;
