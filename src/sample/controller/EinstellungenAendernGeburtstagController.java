@@ -12,6 +12,8 @@ import java.io.IOException;
 
 public class EinstellungenAendernGeburtstagController {
     @FXML
+    private Button btnChangedGeburtstag;
+    @FXML
     private TextField tfChangedGeburtstag;
     @FXML
     private Button btnBackSettings;

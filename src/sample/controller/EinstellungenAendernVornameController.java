@@ -12,6 +12,8 @@ import java.io.IOException;
 
 public class EinstellungenAendernVornameController {
     @FXML
+    private Button btnChangedVorname;
+    @FXML
     private TextField tfChangedVorname;
     @FXML
     private Button btnBackSettings;

@@ -4,11 +4,22 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 
 public class KontaktBearbeitenController {
+    @FXML
+    private TextField addUsername;
+    @FXML
+    private TextField addSurname;
+    @FXML
+    private TextField addName;
+    @FXML
+    private TextField addBirthday;
+    @FXML
+    private TextField addEmail;
     @FXML
     private AnchorPane ContactEdit;
     @FXML

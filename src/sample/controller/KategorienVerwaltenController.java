@@ -4,22 +4,20 @@ package sample.controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.ColorPicker;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.paint.Color;
 
-import java.awt.*;
 import java.io.IOException;
 
 
 
 public class KategorienVerwaltenController {
+    @FXML
+    private Button btnKategorienLoeschen;
+    @FXML
+    private Button btnKategorienAendern;
     @FXML
     private Button btnKategorienAdd;
     @FXML

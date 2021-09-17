@@ -12,6 +12,8 @@ import java.io.IOException;
 
 public class AdressbuchController {
     @FXML
+    private Button btnDelFriend;
+    @FXML
     private Button btnEditFriend;
     @FXML
     private Button btnAddFriend;
