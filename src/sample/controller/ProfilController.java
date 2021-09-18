@@ -38,7 +38,7 @@ public class ProfilController {
     }
     private void testGet() throws IOException {
         try (CloseableHttpClient httpclient = HttpClients.createDefault()) {
-            HttpGet httpGet = new HttpGet("https://www.sharing-time/user/id");
+            HttpGet httpGet = new HttpGet("https://www.sharing-time/user");
             System.out.println(httpGet.getRequestLine());
             httpGet.getHeaders("username");
             System.out.println("******");

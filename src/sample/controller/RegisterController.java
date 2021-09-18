@@ -124,7 +124,7 @@ public class RegisterController {
 
 
     public void submitBtnReg(ActionEvent event) throws UnsupportedEncodingException {
-
+//Stringzuordnung der TxtField eingabe
             firstName = tfRegVorname.getText();
             lastName = tfRegNachname.getText();
             username = tfRegUsername.getText();
