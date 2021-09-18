@@ -24,7 +24,7 @@ public class EinstellungenAendernEmailController {
     private Button btnChangedEmail;
 
     /**
-     *
+     * Methode von Zuweisung eines Buttons
      * @param event Änderung der Sicherheitseinstellungen (Änderung Mail-Adresse)
      * @throws IOException Anzeigen des GUI Sicherheitseinstellungen
      */
@@ -37,19 +37,19 @@ public class EinstellungenAendernEmailController {
     String Eingabe2;
     String Eingabe3;
 
-    public TextField getTfEmailWiederholen() {
 
+    public TextField getTfEmailWiederholen() {
         return tfEmailWiederholen;
     }
-    public TextField getTfNeueEmail() {
 
+    public TextField getTfNeueEmail() {
         return tfNeueEmail;
     }
-    public TextField getTfAlteEmail() {
 
+    public TextField getTfAlteEmail() {
         return tfAlteEmail;
     }
-
+    // Methode zur Ausgabe des Eingegebene Textfeldes
     public void submit(ActionEvent event) {
         Eingabe1 = tfEmailWiederholen.getText();
         Eingabe2 = tfNeueEmail.getText();

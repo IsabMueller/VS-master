@@ -15,7 +15,7 @@ public class JahresÜbersichtController {
     private AnchorPane JahresÜbersichtPane;
 
     /**
-     *
+     * Methode von Zuweisung eines Buttons
      * @param event Wechsel zum GUI "Uebersicht" (Tagesübersicht)
      * @throws IOException Rückkehr zum vorhergehenden GUI
      */

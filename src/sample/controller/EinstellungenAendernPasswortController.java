@@ -25,8 +25,8 @@ public class EinstellungenAendernPasswortController {
     private Button btnChangedPasswort;
 
     /**
-     *
-     * @param event Änderung des Passworts
+     * Methode von Zuweisung eines Buttons
+     * @param event Änderung des Passwortes
      * @throws IOException Anzeigen des GUI "SicherheitsEinstellungen"
      */
     public void handleBtnBackSettings(ActionEvent event) throws IOException {
@@ -38,19 +38,23 @@ public class EinstellungenAendernPasswortController {
     String Eingabe2;
     String Eingabe3;
 
+    //Methode zur Änderung des alten Passwortes
     public TextField getTfAltesPasswort() {
 
         return tfAltesPasswort;
     }
+
+    //Methode zur Änderung des neuen Passworts
     public TextField getTfNeuesPasswort() {
 
         return tfNeuesPasswort;
     }
+    //Methode für das Wiederholen des Passwortes
     public TextField getTfPasswortWiederholen() {
 
         return tfPasswortWiederholen;
     }
-
+    // Methode zur Ausgabe des Eingegebene Textfeldes
     public void submit(ActionEvent event) {
         Eingabe1 = tfAltesPasswort.getText();
         Eingabe2 = tfNeuesPasswort.getText();

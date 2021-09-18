@@ -21,7 +21,7 @@ public class EinstellungenAendernUsernameController {
     private Pane usernameChangePane;
 
     /**
-     *
+     * Methode von Zuweisung eines Buttons
      * @param event Änderung des Nutzernamens (Username)
      * @throws IOException Anzeigen des GUI "ProfilEinstellungen"
      */
@@ -32,11 +32,12 @@ public class EinstellungenAendernUsernameController {
      //Textfeld Eingabe Auswerten
     String Eingabe;
 
+    //Methode zur Änderung des Nutzernamens
     public TextField getTfChangedUsername() {
 
         return tfChangedUsername;
     }
-
+    // Methode zur Ausgabe des Eingegebene Textfeldes
     public void submit(ActionEvent event) {
         Eingabe = tfChangedUsername.getText();
         System.out.println(Eingabe);

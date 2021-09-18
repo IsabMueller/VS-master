@@ -9,9 +9,11 @@ public class TerminOkController {
     private Button btnOK;
 
     /**
+     *  Methode von Zuweisung eines Buttons
      * Controller zur Bestätigung einer Terminanfrage
      * @param actionEvent
      */
+    //Methode zur Bestätigung einer Terminanfrage
     public void handleBtnOK(ActionEvent actionEvent) {
     }
 }

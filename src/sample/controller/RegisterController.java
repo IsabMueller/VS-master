@@ -67,6 +67,7 @@ public class RegisterController {
      *  zurück zum GUI Willkommen
      */
     @FXML
+    //Methode von Zuweisung eines Buttons
     public void handleBtnAbbrechen(ActionEvent actionEvent){
         AnchorPane newPane = null;
         try {

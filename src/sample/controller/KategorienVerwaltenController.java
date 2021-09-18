@@ -31,7 +31,7 @@ public class KategorienVerwaltenController {
     private String https;
 
     /**
-     *
+     * Methode von Zuweisung eines Buttons
      * @param event Wechsel zum GUI "Einstellungen"
      * @throws IOException
      */
@@ -50,7 +50,7 @@ public class KategorienVerwaltenController {
     //    Color Katcolor = colorpickerKategorien.getValue();
     //    tfKategorieName.setBackground(new Background(new BackgroundFill(Katcolor, null, null)));
     //}
-
+    // Methode zur Ausgabe des Eingegebene Textfeldes
     public void submitKat(ActionEvent event) {
         kategorie = tfKategorieName.getText();
         System.out.println(kategorie);

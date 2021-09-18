@@ -47,11 +47,11 @@ public class LoginController{
     @FXML
     private BorderPane loginPane;
 
-
+    // Methode zur bennenug eines Textfeles
     public TextField getTfUsername() {
         return tfUsername;
     }
-
+    // Methode zur bennenug eines Textfeles
     public PasswordField getTfPassword() {
         return tfPassword;
     }
@@ -61,7 +61,7 @@ public class LoginController{
     public Stage window;
 
 
-
+    // Methode zur Erfassung LoginDaten und Auswertung,bei Fehlschlag,exception
     public void submitBtnLogin(ActionEvent event) throws IOException {
         Username = tfUsername.getText();
         Password = tfPassword.getText();
@@ -77,7 +77,7 @@ public class LoginController{
                     List<NameValuePair> nvps = new ArrayList<>();
                     nvps.add(new BasicNameValuePair("username", Username));
                     nvps.add(new BasicNameValuePair("password", Password));
-//request token
+                    //request token
                     try {
                         httpPost.setEntity(new UrlEncodedFormEntity(nvps));
                     } catch (UnsupportedEncodingException e) {
@@ -111,7 +111,7 @@ public class LoginController{
             }
     }
 
-
+   //Methode von Zuweisung eines Buttons,Weilerleitung zum Hauptbildschirm
     public void handleBtnCancel(ActionEvent event) {
         AnchorPane newPane = null;
         try {

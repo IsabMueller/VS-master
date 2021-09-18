@@ -29,7 +29,7 @@ public class EinstellungenAendernAdresseController {
     private Button btnBackAdresseChange;
 
     /**
-     *
+     * Methode von Zuweisung eines Buttons
      * @param event Änderung der Adresse
      * @throws IOException Anzeigen des UI Profil Einstellungen
      */
@@ -44,27 +44,31 @@ public class EinstellungenAendernAdresseController {
     String Eingabe4;
     String Eingabe5;
 
+    //Methode zur Änderung des landes
     public TextField getTfChangedLand() {
-
         return tfChangedLand;
     }
-    public TextField getTfChangedPostleitzahl() {
 
+    //Methode zur Änderung der Postleitzahl
+    public TextField getTfChangedPostleitzahl() {
         return tfChangedPostleitzahl;
     }
-    public TextField getTfChangedStadt() {
 
+    //Methode zur Änderung der stadt
+    public TextField getTfChangedStadt() {
         return tfChangedStadt;
     }
-    public TextField getTfChangedHausnummer() {
 
+    //Methode zur Änderung der Hausnummer
+    public TextField getTfChangedHausnummer() {
         return tfChangedHausnummer;
     }
-    public TextField getTfChangedStarße() {
 
+    //Methode zur Änderung der Straße
+    public TextField getTfChangedStarße() {
         return tfChangedStarße;
     }
-
+    // Methode zur Ausgabe des Eingegebene Textfeldes
     public void submit(ActionEvent event) {
         Eingabe1 = tfChangedLand.getText();
         Eingabe2 = tfChangedPostleitzahl.getText();

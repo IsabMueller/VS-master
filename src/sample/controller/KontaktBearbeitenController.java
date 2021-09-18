@@ -27,6 +27,7 @@ public class KontaktBearbeitenController {
     @FXML
     private Button btnaddfriend;
 
+    // Methode zum Rückkontakt
     public void btnandlebackContacts(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Adressbuch.fxml"));
         ContactEdit.getChildren().setAll(newPane);

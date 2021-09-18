@@ -15,10 +15,12 @@ public class WochenÜbersichtController {
     private Button btnBackTagesübersicht;
 
     /**
+     * Methode von Zuweisung eines Buttons
      * Controller zum Anzeigen der Wochenübersicht
      * @param event
      * @throws IOException
      */
+    //Methode der Rückkehr eines ÜbersichtTages
     public void handleBtnBackÜbersichtTag(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Uebersicht.fxml"));
         WochenÜbersichtPane.getChildren().setAll(newPane);

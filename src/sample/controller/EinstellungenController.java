@@ -23,6 +23,7 @@ public class EinstellungenController {
     private Button btnSicherheitseinstellungen;
 
     /**
+     * Methode von Zuweisung eines Buttons
      * Controller Klasse für den Punkt "Einstellungen"
      * @param event Wechsel zum GUI "Start"
      * @throws IOException
@@ -33,6 +34,7 @@ public class EinstellungenController {
     }
 
     /**
+     * Methode von Zuweisung eines Buttons
      * Controller Klasse für den Punkt "Einstellungen"
      * @param event Wechsel zum GUI "Profileinstellungen"
      * @throws IOException
@@ -43,6 +45,7 @@ public class EinstellungenController {
     }
 
     /**
+     * Methode von Zuweisung eines Buttons
      * Controller Klasse für den Punkt "Einstellungen"
      * @param event Wechsel zum GUI "KategorienVerwaltung"
      * @throws IOException
@@ -53,10 +56,12 @@ public class EinstellungenController {
     }
 
     /**
+     * Methode von Zuweisung eines Buttons
      * Controller Klasse für den Punkt "Einstellungen"
      * @param event Wechsel zum GUI "Sicherheitseinstellungen"
      * @throws IOException
      */
+
     public void handleBtnSicherheitseinstellungen(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/SicherheitsEinstellungen.fxml"));
         einstellungenPane.getChildren().setAll(newPane);

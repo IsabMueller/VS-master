@@ -21,8 +21,8 @@ public class EinstellungenAendernGeburtstagController {
     private Pane GeburtstagChangePane;
 
     /**
-     *
-     * @param event Änderung des Geburtstags (Geburtsdatum)
+     * Methode von Zuweisung eines Buttons
+     * @param event Änderung des Geburtstages (Geburtsdatum)
      * @throws IOException Anzeigen der GUI ProfilEinstellungen
      */
     public void handleBtnBackSettings(ActionEvent event) throws IOException {
@@ -32,11 +32,12 @@ public class EinstellungenAendernGeburtstagController {
     //Textfeld Eingabe Auswerten
     String Eingabe;
 
+    //Methode zur Änderung des Geburtstages
     public TextField getTfChangedGeburtstag() {
 
         return tfChangedGeburtstag;
     }
-
+    // Methode zur Ausgabe des Eingegebene Textfeldes
     public void submit(ActionEvent event) {
         Eingabe = tfChangedGeburtstag.getText();
         System.out.println(Eingabe);

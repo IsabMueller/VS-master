@@ -15,10 +15,11 @@ public class MonatsÜbersichtController {
     private AnchorPane MonatsÜbersichtPane;
 
     /**
-     *
+     * Methode von Zuweisung eines Buttons
      * @param event Button zum Anzeigen der Tagesübersicht (sprich: GUI "Uebersicht")
      * @throws IOException Rückkehr zum ursprünglichen GUI
      */
+    //Methode der Rückkehr eines ÜbersichtTages
     public void handleBtnBackÜbersichtTag(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Uebersicht.fxml"));
         MonatsÜbersichtPane.getChildren().setAll(newPane);

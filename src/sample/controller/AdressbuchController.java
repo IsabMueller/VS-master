@@ -26,15 +26,18 @@ public class AdressbuchController {
      * Methode zum Erstellen eines neuen Kalenders nach Registirerung.
      */
 
+    // Methoden zum page weiterleiten
     public void handleBtnNeuerKalender(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Start.fxml"));
         neuerKalenderPane.getChildren().setAll(newPane);
     }
 
+
     public void btnhandleaddfriends(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/AdressbuchHinzufügen.fxml"));
         neuerKalenderPane.getChildren().setAll(newPane);
     }//Safe BtnHandleEditFriends
+
 
     public void BtnHandleEditFriends(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/KontaktBearbeiten.fxml"));

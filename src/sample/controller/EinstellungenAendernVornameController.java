@@ -21,7 +21,7 @@ public class EinstellungenAendernVornameController {
     private Pane VornameChangePane;
 
     /**
-     *
+     * Methode von Zuweisung eines Buttons
      * @param event Änderung des Vornamens
      * @throws IOException Anzeigen des GUI "ProfilEinstellungen"
      */
@@ -32,10 +32,12 @@ public class EinstellungenAendernVornameController {
     //Textfeld Eingabe Auswerten
     String Eingabe;
 
+    //Methode zur Änderung des Vornamens
     public TextField getTfChangedVorname() {
         return tfChangedVorname;
     }
 
+    // Methode zur Ausgabe des Eingegebene Textfeldes
     public void submit(ActionEvent event) {
         Eingabe = tfChangedVorname.getText();
         System.out.println(Eingabe);

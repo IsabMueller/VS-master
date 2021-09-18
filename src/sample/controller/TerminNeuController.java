@@ -76,6 +76,7 @@ class TerminNeuControlle{
      * @param event
      */
     @FXML
+    //Methode von Zuweisung eines Buttons
     public void handleBtnBack(ActionEvent event) throws IOException{
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Start.fxml"));
         terminNeuPane.getChildren().setAll(newPane);
@@ -85,7 +86,7 @@ class TerminNeuControlle{
      * Controller zum Erstellen eines neuen Termins
      * @param actionEvent
      */
-
+    // Methode zur Ausgabe des Eingegebene Textfeldes
     public void submitBtnOK(ActionEvent actionEvent) {
 
         int vMin = 0;

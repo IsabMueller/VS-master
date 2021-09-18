@@ -30,36 +30,38 @@ public class ProfilEinstellungenController {
     private AnchorPane ProfileinstellungenPane;
 
     /**
+     * Methode von Zuweisung eines Buttons
      * Controller Klasse zum Aufruf der einzelnen Punkte in den Einstellungen
      * Allgemeine Einstellungen, Änderungen der Adresse, des Nutzernamen, des Vor- und Nachnamen, des Geburtstags bzw. Geburtsdatums
      * @param event
      * @throws IOException
      */
+    //Methode der ProfilEinstellungen
     public void handleBtnBackProfileinstellungen(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Einstellungen.fxml"));
         ProfileinstellungenPane.getChildren().setAll(newPane);
     }
-
+    //Methode zur Änderung der Adresse
     public void handleBtnChangeAdresse(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/EinstellungenAendernAdresse.fxml"));
         ProfileinstellungenPane.getChildren().setAll(newPane);
     }
-
+    //Methode zur Änderung des Nutzernames
     public void handleBtnChangeUsername(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/EinstellungenAendernUsername.fxml"));
         ProfileinstellungenPane.getChildren().setAll(newPane);
     }
-
+    //Methode zur Änderung des Nachnamens
     public void handleBtnChangeNachname(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/EinstellungenAendernNachname.fxml"));
         ProfileinstellungenPane.getChildren().setAll(newPane);
     }
-
+    //Methode zur Änderung des Vornamens
     public void handleBtnChangeVorname(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/EinstellungenAendernVorname.fxml"));
         ProfileinstellungenPane.getChildren().setAll(newPane);
     }
-
+    //Methode zur Änderung des Geburtstages
     public void handleBtnChangeGeburtstag(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/EinstellungenAendernGeburtstag.fxml"));
         ProfileinstellungenPane.getChildren().setAll(newPane);

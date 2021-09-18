@@ -15,10 +15,12 @@ public class TagesÜbersichtController {
     private Button btnBackTagesübersicht;
 
     /**
+     * Methode von Zuweisung eines Buttons
      * Controller für Abschnitt Übersicht
      * @param event Anzeigen des GUI "Uebersicht"
      * @throws IOException
      */
+    //Methode eines ÜbersichtTages
     public void handleBtnBackÜbersichtTag(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Uebersicht.fxml"));
         TagesÜbersichtPane.getChildren().setAll(newPane);
