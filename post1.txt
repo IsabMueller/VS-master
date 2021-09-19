@@ -1,1 +1,1 @@
-{"statusCode":500,"message":"Internal server error"}
+{"username":"trollol","firstname":"uff","email":"a@b.c","lastname":"lol","birthdate":null,"salt":"aec7a776f4facd5b8ea1ea155ea401940ee48cd3278c4dfab980b06804e6b717","password":"9154aff64902df54002ce6f859ad7f5a5101208cd9e45aad65ea8213518faac61c8613bec0ff7cfe21aa839c11c5f393eb1ff59f83eea1d6b05edb5c45e299d1637fdd2ecfbf698258da1bab1de3140ddde8c5fb6dcdd6d884f2cd2bc32633d3d195fbe6","picture":null,"id":13,"createdAt":"2021-09-19T07:47:15.160Z","updatedAt":"2021-09-19T07:47:15.160Z"}

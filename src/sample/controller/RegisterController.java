@@ -129,7 +129,7 @@ public class RegisterController {
             firstName = tfRegVorname.getText();
             lastName = tfRegNachname.getText();
             username = tfRegUsername.getText();
-           // birthday = tfBirthday.getText();
+            birthday = tfBirthday.getText();
             mail = tfRegMail.getText();
             mailRepeat = tfRegMailwdh.getText();
             password = tfRegPw.getText();
@@ -146,7 +146,7 @@ public class RegisterController {
             System.out.println(username);
             System.out.println(mail);
             System.out.println(mailRepeat);
-            // System.out.println(birthday);
+            System.out.println(birthday);
             System.out.println(password);
             System.out.println(passwordRepeat);
 
@@ -155,11 +155,11 @@ public class RegisterController {
             {
                 HttpPost httpPost = new HttpPost("https://www.sharing-time.rest/auth/register");
                 List<NameValuePair> nvps = new ArrayList<>();
-                nvps.add(new BasicNameValuePair("firstname", firstName));
-                nvps.add(new BasicNameValuePair("lastname", lastName));
+                nvps.add(new BasicNameValuePair("firstName", firstName));
+                nvps.add(new BasicNameValuePair("lastName", lastName));
                 nvps.add(new BasicNameValuePair("username", username));
-                nvps.add(new BasicNameValuePair("mail", mail));
-                // nvps.add(new BasicNameValuePair("birthday", birthday));
+                nvps.add(new BasicNameValuePair("email", mail));
+                nvps.add(new BasicNameValuePair("birthday", birthday));
                 nvps.add(new BasicNameValuePair("password", password));
                 httpPost.setEntity(new UrlEncodedFormEntity(nvps));
                 try {

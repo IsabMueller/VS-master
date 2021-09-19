@@ -27,7 +27,7 @@ public class AdressbuchHinzufügenController {
     @FXML
     private TextField addEmail;
 
-// Methode zum Rückkontakt
+// Methode
     public void btnandlebackContacts(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Adressbuch.fxml"));
         Kontakthinzufügen.getChildren().setAll(newPane);
