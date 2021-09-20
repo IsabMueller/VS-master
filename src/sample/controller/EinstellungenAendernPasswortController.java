@@ -34,12 +34,12 @@ public class EinstellungenAendernPasswortController {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/SicherheitsEinstellungen.fxml"));
         PasswortChangePane.getChildren().setAll(newPane);
     }
-    //Umwandlung der eingabe in das Textfeldes, in ein String
+    //< Umwandlung der eingabe in das Textfeldes, in ein String
     String Eingabe1;
     String Eingabe2;
     String Eingabe3;
 
-    // Methode zur Erfassung von der Eingabe in das Textfeld
+    //< Methode zur Erfassung von der Eingabe in das Textfeld
     public TextField getTfAltesPasswort() {
 
         return tfAltesPasswort;

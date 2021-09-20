@@ -22,12 +22,12 @@ class TerminNeuControlle{
     private ComboBox comboboxKategorie;
     @FXML
    private ComboBox ComboboxWiederholen;
-  //  @FXML
-   // private ColorPicker ChangeColorTermin;
-  //  @FXML
-  //  private ComboBox comboboxErinnerung;
-   // @FXML
-   // private ComboBox comboboxKategorie;
+  //<  @FXML
+   //< private ColorPicker ChangeColorTermin;
+  //<  @FXML
+  //<  private ComboBox comboboxErinnerung;
+   //< @FXML
+   //< private ComboBox comboboxKategorie;
     @FXML
     private TextField tfBisMin;
     @FXML
@@ -53,10 +53,10 @@ class TerminNeuControlle{
     public String bisStd;
     public String bisMin;
     public String terminName;
-  //  public Date date;
+  //<  public Date date;
 
 /*
-// keine Anzeige in box
+//< keine Anzeige in box
     private void loadErinnerung() {
         comboboxErinnerung.getItems().add("Nein");
         comboboxErinnerung.getItems().add("5 Minuten");
@@ -76,7 +76,7 @@ class TerminNeuControlle{
      * @param event
      */
     @FXML
-    //Methode von Zuweisung eines Buttons
+    //< Methode von Zuweisung eines Buttons
     public void handleBtnBack(ActionEvent event) throws IOException{
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Start.fxml"));
         terminNeuPane.getChildren().setAll(newPane);
@@ -86,7 +86,7 @@ class TerminNeuControlle{
      * Controller zum Erstellen eines neuen Termins
      * @param actionEvent
      */
-    // Methode zur Ausgabe des Eingegebene Textfeldes
+    //< Methode zur Ausgabe des Eingegebene Textfeldes
     public void submitBtnOK(ActionEvent actionEvent) {
 
         int vMin = 0;
