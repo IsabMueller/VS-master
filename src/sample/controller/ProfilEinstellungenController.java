@@ -31,37 +31,61 @@ public class ProfilEinstellungenController {
 
     /**
      * Methode von Zuweisung eines Buttons
-     * Controller Klasse zum Aufruf der einzelnen Punkte in den Einstellungen
-     * Allgemeine Einstellungen, Änderungen der Adresse, des Nutzernamen, des Vor- und Nachnamen, des Geburtstags bzw. Geburtsdatums
-     * @param event
+     * Controller Klasse für den Punkt "ProfilEinstellungen"
+     * @param event Wechsel zum GUI "Einstellungen"
      * @throws IOException
      */
-    //Methode der ProfilEinstellungen
     public void handleBtnBackProfileinstellungen(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Einstellungen.fxml"));
         ProfileinstellungenPane.getChildren().setAll(newPane);
     }
-    //Methode zur Änderung der Adresse
+
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "ProfilEinstellungen"
+     * @param event Wechsel zum GUI "EinstellungAendernAdresse"
+     * @throws IOException
+     */
     public void handleBtnChangeAdresse(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/EinstellungenAendernAdresse.fxml"));
         ProfileinstellungenPane.getChildren().setAll(newPane);
     }
-    //Methode zur Änderung des Nutzernames
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "ProfilEinstellungen"
+     * @param event Wechsel zum GUI "EinstellungAendernUsername"
+     * @throws IOException
+     */
     public void handleBtnChangeUsername(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/EinstellungenAendernUsername.fxml"));
         ProfileinstellungenPane.getChildren().setAll(newPane);
     }
-    //Methode zur Änderung des Nachnamens
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "ProfilEinstellungen"
+     * @param event Wechsel zum GUI "EinstellungAendernNachname"
+     * @throws IOException
+     */
     public void handleBtnChangeNachname(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/EinstellungenAendernNachname.fxml"));
         ProfileinstellungenPane.getChildren().setAll(newPane);
     }
-    //Methode zur Änderung des Vornamens
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "ProfilEinstellungen"
+     * @param event Wechsel zum GUI "EinstellungAendernVorname"
+     * @throws IOException
+     */
     public void handleBtnChangeVorname(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/EinstellungenAendernVorname.fxml"));
         ProfileinstellungenPane.getChildren().setAll(newPane);
     }
-    //Methode zur Änderung des Geburtstages
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "ProfilEinstellungen"
+     * @param event Wechsel zum GUI "EinstellungAendernGeburtstag"
+     * @throws IOException
+     */
     public void handleBtnChangeGeburtstag(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/EinstellungenAendernGeburtstag.fxml"));
         ProfileinstellungenPane.getChildren().setAll(newPane);

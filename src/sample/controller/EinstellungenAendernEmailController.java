@@ -25,19 +25,20 @@ public class EinstellungenAendernEmailController {
 
     /**
      * Methode von Zuweisung eines Buttons
-     * @param event Änderung der Sicherheitseinstellungen (Änderung Mail-Adresse)
-     * @throws IOException Anzeigen des GUI Sicherheitseinstellungen
+     * Controller Klasse für den Punkt "EinstellungenAendernEmail"
+     * @param event Wechsel zum GUI "SicherheitsEinstellung"
+     * @throws IOException
      */
     public void handleBtnBackSettings(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/SicherheitsEinstellungen.fxml"));
         EmailChangePane.getChildren().setAll(newPane);
     }
-    //Textfeld Eingabe Auswerten
+    //Umwandlung der eingabe in das Textfeldes, in ein String
     String Eingabe1;
     String Eingabe2;
     String Eingabe3;
 
-
+    // Methode zur Erfassung von der Eingabe in das Textfeld
     public TextField getTfEmailWiederholen() {
         return tfEmailWiederholen;
     }
@@ -49,7 +50,11 @@ public class EinstellungenAendernEmailController {
     public TextField getTfAlteEmail() {
         return tfAlteEmail;
     }
-    // Methode zur Ausgabe des Eingegebene Textfeldes
+    /**
+     * Methode von Zuweisung der jeweiligen Textfelder in ein String
+     * Wiedergabe durch System.out.println
+     * @param event Ausgabe von eingebenem Text
+     */
     public void submit(ActionEvent event) {
         Eingabe1 = tfEmailWiederholen.getText();
         Eingabe2 = tfNeueEmail.getText();

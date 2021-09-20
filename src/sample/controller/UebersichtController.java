@@ -25,31 +25,50 @@ public class UebersichtController {
 
     /**
      * Methode von Zuweisung eines Buttons
-     * Controller für das Anzeigen der einzelnen Übersichtseinstellungen (Tages-, Wochen-, Monats- und Jahresansicht)
-     * @param event
+     * Controller Klasse für den Punkt "Übersicht"
+     * @param event Wechsel zum GUI "Start"
      * @throws IOException
      */
-    //Methode der Anzeige eines Übersichtes
     public void handleBtnBackUebersicht(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Start.fxml"));
         uebersichtPane.getChildren().setAll(newPane);
     }
-    //Methode der Anzeige eines TagesÜbersichtes
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Übersicht"
+     * @param event Wechsel zum GUI "Tagesübersicht"
+     * @throws IOException
+     */
     public void handleBtnTagesübersicht(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/TagesÜbersicht.fxml"));
         uebersichtPane.getChildren().setAll(newPane);
     }
-    //Methode der Anzeige eines WochenÜbersichtes
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Übersicht"
+     * @param event Wechsel zum GUI "WochenÜbersicht"
+     * @throws IOException
+     */
     public void handleBtnWochenübersicht(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/WochenÜbersicht.fxml"));
         uebersichtPane.getChildren().setAll(newPane);
     }
-    //Methode der Anzeige eines MonatsÜbersichtes
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Übersicht"
+     * @param event Wechsel zum GUI "Monatsübersicht"
+     * @throws IOException
+     */
     public void handleBtnMonatsübersicht(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/MonatsÜbersicht.fxml"));
         uebersichtPane.getChildren().setAll(newPane);
     }
-    //Methode der Anzeige eines JahresÜbersichtes
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Übersicht"
+     * @param event Wechsel zum GUI "Jahresübersicht"
+     * @throws IOException
+     */
     public void handleBtnJahresübersicht(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/JahresÜbersicht.fxml"));
         uebersichtPane.getChildren().setAll(newPane);

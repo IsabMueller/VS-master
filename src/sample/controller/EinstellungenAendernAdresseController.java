@@ -30,45 +30,47 @@ public class EinstellungenAendernAdresseController {
 
     /**
      * Methode von Zuweisung eines Buttons
-     * @param event Änderung der Adresse
-     * @throws IOException Anzeigen des UI Profil Einstellungen
+     * Controller Klasse für den Punkt "EinstellungenAendernAdresse"
+     * @param event Wechsel zum GUI "ProfilEinstellung"
+     * @throws IOException
      */
     public void handleBtnBackAdresseChange(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/ProfilEinstellungen.fxml"));
         adresseChangePane.getChildren().setAll(newPane);
     }
-    //Textfeld Eingabe Auswerten
+    //Umwandlung der eingabe in das Textfeldes, in ein String
     String Eingabe1;
     String Eingabe2;
     String Eingabe3;
     String Eingabe4;
     String Eingabe5;
 
-    //Methode zur Änderung des landes
+
+     // Methode zur Erfassung von der Eingabe in das Textfeld
     public TextField getTfChangedLand() {
         return tfChangedLand;
     }
 
-    //Methode zur Änderung der Postleitzahl
     public TextField getTfChangedPostleitzahl() {
         return tfChangedPostleitzahl;
     }
 
-    //Methode zur Änderung der stadt
     public TextField getTfChangedStadt() {
         return tfChangedStadt;
     }
 
-    //Methode zur Änderung der Hausnummer
     public TextField getTfChangedHausnummer() {
         return tfChangedHausnummer;
     }
 
-    //Methode zur Änderung der Straße
     public TextField getTfChangedStarße() {
         return tfChangedStarße;
     }
-    // Methode zur Ausgabe des Eingegebene Textfeldes
+    /**
+     * Methode von Zuweisung der jeweiligen Textfelder in ein String
+     * Wiedergabe durch System.out.println
+     * @param event Ausgabe von eingebenem Text
+     */
     public void submit(ActionEvent event) {
         Eingabe1 = tfChangedLand.getText();
         Eingabe2 = tfChangedPostleitzahl.getText();

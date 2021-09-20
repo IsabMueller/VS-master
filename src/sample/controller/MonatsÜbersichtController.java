@@ -16,8 +16,9 @@ public class MonatsÜbersichtController {
 
     /**
      * Methode von Zuweisung eines Buttons
-     * @param event Button zum Anzeigen der Tagesübersicht (sprich: GUI "Uebersicht")
-     * @throws IOException Rückkehr zum ursprünglichen GUI
+     * Controller Klasse für den Punkt "MonatsÜbersicht"
+     * @param event Wechsel zum GUI "Übersicht"
+     * @throws IOException
      */
     //Methode der Rückkehr eines ÜbersichtTages
     public void handleBtnBackÜbersichtTag(ActionEvent event) throws IOException {

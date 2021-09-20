@@ -22,22 +22,27 @@ public class EinstellungenAendernGeburtstagController {
 
     /**
      * Methode von Zuweisung eines Buttons
-     * @param event Änderung des Geburtstages (Geburtsdatum)
-     * @throws IOException Anzeigen der GUI ProfilEinstellungen
+     * Controller Klasse für den Punkt "EinstellungenAendernGeburtstag"
+     * @param event Wechsel zum GUI "ProfilEinstellungen"
+     * @throws IOException
      */
     public void handleBtnBackSettings(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/ProfilEinstellungen.fxml"));
        GeburtstagChangePane.getChildren().setAll(newPane);
     }
-    //Textfeld Eingabe Auswerten
+    //Umwandlung der eingabe in das Textfeldes, in ein String
     String Eingabe;
 
-    //Methode zur Änderung des Geburtstages
+    // Methode zur Erfassung von der Eingabe in das Textfeld
     public TextField getTfChangedGeburtstag() {
 
         return tfChangedGeburtstag;
     }
-    // Methode zur Ausgabe des Eingegebene Textfeldes
+    /**
+     * Methode von Zuweisung der jeweiligen Textfelder in ein String
+     * Wiedergabe durch System.out.println
+     * @param event Ausgabe von eingebenem Text
+     */
     public void submit(ActionEvent event) {
         Eingabe = tfChangedGeburtstag.getText();
         System.out.println(Eingabe);

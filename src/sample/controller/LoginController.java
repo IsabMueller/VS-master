@@ -47,21 +47,27 @@ public class LoginController{
     @FXML
     private BorderPane loginPane;
 
-    // Methode zur bennenug eines Textfeles
+    // Methode zur Erfassung von der Eingabe in das Textfeld
     public TextField getTfUsername() {
         return tfUsername;
     }
-    // Methode zur bennenug eines Textfeles
+
     public PasswordField getTfPassword() {
         return tfPassword;
     }
 
+    //Umwandlung der eingabe in das Textfeldes, in ein String
     public String Username;
     public String Password;
     public Stage window;
 
 
-    // Methode zur Erfassung LoginDaten und Auswertung,bei Fehlschlag,exception
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Login"
+     * @param event Wechsel zum GUI "Error"(bei fehlschlag), Hauptansicht bei Erfolg
+     * @throws IOException
+     */
     public void submitBtnLogin(ActionEvent event) throws IOException {
         Username = tfUsername.getText();
         Password = tfPassword.getText();

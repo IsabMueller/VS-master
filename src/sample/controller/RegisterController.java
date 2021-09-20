@@ -64,10 +64,12 @@ public class RegisterController {
 
 
     /**
-     *  zurück zum GUI Willkommen
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Register"
+     * @param actionEvent Wechsel zum GUI "Willkommen"
+     * @throws IOException
      */
     @FXML
-    //Methode von Zuweisung eines Buttons
     public void handleBtnAbbrechen(ActionEvent actionEvent){
         AnchorPane newPane = null;
         try {
@@ -86,6 +88,7 @@ public class RegisterController {
     //public TextField getTfGeburtstag() {
       //  return tfBirthday;
    // }
+    // Methode zur Erfassung von der Eingabe in das Textfeld
 
     public TextField getTfRegNachname() {
         return tfRegNachname;
@@ -111,7 +114,7 @@ public class RegisterController {
         return tfRegPwConfirm;
     }
 
-
+    //Umwandlung der eingabe in das Textfeldes, in ein String
     public String firstName;
     public String lastName;
     public String username;
@@ -123,7 +126,11 @@ public class RegisterController {
     private int id;
 
 
-
+    /**
+     * Methode von Zuweisung der jeweiligen Textfelder in ein String
+     * Wiedergabe durch System.out.println
+     * @param event Ausgabe von eingebenem Text
+     */
     public void submitBtnReg(ActionEvent event) throws UnsupportedEncodingException {
 //Stringzuordnung der TxtField eingabe
             firstName = tfRegVorname.getText();

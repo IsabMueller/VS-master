@@ -27,7 +27,12 @@ public class AdressbuchHinzufügenController {
     @FXML
     private TextField addEmail;
 
-// Methode
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "AdressbuchHinzufügen"
+     * @param event Wechsel zum GUI "Adressbuch"
+     * @throws IOException
+     */
     public void btnandlebackContacts(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Adressbuch.fxml"));
         Kontakthinzufügen.getChildren().setAll(newPane);

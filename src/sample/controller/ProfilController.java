@@ -28,11 +28,10 @@ public class ProfilController {
 
     /**
      * Methode von Zuweisung eines Buttons
-     * @param event Anzeigen des GUI "Start"
+     * Controller Klasse für den Punkt "Profil"
+     * @param event Wechsel zum GUI "Start"
      * @throws IOException
      */
-
-  //  Methode der Rückkehr eines Profiles
     public void handleBtnBackProfil(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Start.fxml"));
         profilPane.getChildren().setAll(newPane);

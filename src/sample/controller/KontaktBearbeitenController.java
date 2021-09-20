@@ -27,8 +27,12 @@ public class KontaktBearbeitenController {
     @FXML
     private Button btnaddfriend;
 
-    // Methode zum Rückkontakt
-    public void btnandlebackContacts(ActionEvent event) throws IOException {
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "KontaktBearbeiten"
+     * @param event Wechsel zum GUI "Adressbuch"
+     * @throws IOException
+     */    public void btnandlebackContacts(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Adressbuch.fxml"));
         ContactEdit.getChildren().setAll(newPane);
     }

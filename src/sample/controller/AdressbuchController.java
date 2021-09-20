@@ -23,22 +23,33 @@ public class AdressbuchController {
     private Button btnBackNeuerKalender;
 
     /**
-     * Methode zum Erstellen eines neuen Kalenders nach Registirerung.
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Adressbuch"
+     * @param event Wechsel zum GUI Hauptansicht
+     * @throws IOException
      */
-
-    // Methoden zum page weiterleiten
     public void handleBtnNeuerKalender(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Start.fxml"));
         neuerKalenderPane.getChildren().setAll(newPane);
     }
 
-
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Adressbuch"
+     * @param event Wechsel zum GUI "AdressbuchHinzufügen"
+     * @throws IOException
+     */
     public void btnhandleaddfriends(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/AdressbuchHinzufügen.fxml"));
         neuerKalenderPane.getChildren().setAll(newPane);
-    }//Safe BtnHandleEditFriends
+    }
 
-
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Adressbuch"
+     * @param event Wechsel zum GUI "KontaktBearbeiten"
+     * @throws IOException
+     */
     public void BtnHandleEditFriends(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/KontaktBearbeiten.fxml"));
         neuerKalenderPane.getChildren().setAll(newPane);

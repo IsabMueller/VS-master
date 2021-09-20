@@ -37,47 +37,80 @@ public class StartController {
 
     /**
      * Methode von Zuweisung eines Buttons
-     * Aufrufen des GUI zur Änderung von Terminen
-     * @param event Neuer Termin, Terminänderung (Bearbeitung oder Löschung), Übersicht, Adressbuch, Tagesübersicht
-     *              und Tracker
+     * Controller Klasse für den Punkt "Start"
+     * @param event Wechsel zum GUI "TerminNeu"
      * @throws IOException
      */
-    // Methode zur Änderung eines neuen Termins
     public void handleBtnTerminNew(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/TerminNeu.fxml"));
         startPane.getChildren().setAll(newPane);
     }
-    // Methode zur Änderung eines Profils
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Start"
+     * @param event Wechsel zum GUI "Profil"
+     * @throws IOException
+     */
     public void handleBtnProfil(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Profil.fxml"));
         startPane.getChildren().setAll(newPane);
     }
-    // Methode zur Änderung eines Übersichtes
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Start"
+     * @param event Wechsel zum GUI "Übersicht"
+     * @throws IOException
+     */
     public void handleBtnUebersicht(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Uebersicht.fxml"));
         startPane.getChildren().setAll(newPane);
     }
-    // Methode zur Änderung des Adressbuches
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Start"
+     * @param event Wechsel zum GUI "Adressbuch"
+     * @throws IOException
+     */
     public void handleBtnAdressbuch(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Adressbuch.fxml"));
         startPane.getChildren().setAll(newPane);
     }
-    // Methode zur Änderung der Einstellungen
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Start"
+     * @param event Wechsel zum GUI "Einstellungen"
+     * @throws IOException
+     */
     public void handleBtnEinstellungen(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Einstellungen.fxml"));
         startPane.getChildren().setAll(newPane);
     }
-    // Methode zur TerminBearbeitung
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Start"
+     * @param event Wechsel zum GUI "TerminBearbeiten"
+     * @throws IOException
+     */
     public void handleBtnTerminEdit(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/TerminBearbeiten.fxml"));
         startPane.getChildren().setAll(newPane);
     }
-    // Methode zur Änderung eines Tagesübersichts
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Start"
+     * @param event Wechsel zum GUI "Tagesübersicht"
+     * @throws IOException
+     */
     public void handleBtnDetailTagesÜersicht(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/TagesÜbersicht.fxml"));
         startPane.getChildren().setAll(newPane);
     }
-    // Methode zur Änderung eines Trackers
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Start"
+     * @param event Wechsel zum GUI "TerminNeu"
+     * @throws IOException
+     */
     public void handleBtnTracker(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Tracker.fxml"));
         startPane.getChildren().setAll(newPane);

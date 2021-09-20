@@ -32,6 +32,7 @@ public class KategorienVerwaltenController {
 
     /**
      * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "KategorienVerwalten"
      * @param event Wechsel zum GUI "Einstellungen"
      * @throws IOException
      */
@@ -39,18 +40,19 @@ public class KategorienVerwaltenController {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Einstellungen.fxml"));
         KategorienVerwaltenPane.getChildren().setAll(newPane);
     }
-
+    //Umwandlung der eingabe in das Textfeldes, in ein String
     String kategorie;
 
+    // Methode zur Erfassung von der Eingabe in das Textfeld
     public TextField getTfKategorieName(){
         return tfKategorieName;
     }
-    //Colorpicker
-    //public void ChangeColor(ActionEvent event){
-    //    Color Katcolor = colorpickerKategorien.getValue();
-    //    tfKategorieName.setBackground(new Background(new BackgroundFill(Katcolor, null, null)));
-    //}
-    // Methode zur Ausgabe des Eingegebene Textfeldes
+
+    /**
+     * Methode von Zuweisung der jeweiligen Textfelder in ein String
+     * Wiedergabe durch System.out.println
+     * @param event Ausgabe von eingebenem Text
+     */
     public void submitKat(ActionEvent event) {
         kategorie = tfKategorieName.getText();
         System.out.println(kategorie);
@@ -61,6 +63,13 @@ public class KategorienVerwaltenController {
 
 
     }
-
+    // Colorpicker removed
+    /**
+    *Colorpicker
+    *public void ChangeColor(ActionEvent event){
+    *    Color Katcolor = colorpickerKategorien.getValue();
+    *    tfKategorieName.setBackground(new Background(new BackgroundFill(Katcolor, null, null)));
+    *}
+     */
 
 }

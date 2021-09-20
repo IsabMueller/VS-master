@@ -26,35 +26,38 @@ public class EinstellungenAendernPasswortController {
 
     /**
      * Methode von Zuweisung eines Buttons
-     * @param event Änderung des Passwortes
-     * @throws IOException Anzeigen des GUI "SicherheitsEinstellungen"
+     * Controller Klasse für den Punkt "EinstellungenAenderPasswort"
+     * @param event Wechsel zum GUI "SicherheitsEinstellungen"
+     * @throws IOException
      */
     public void handleBtnBackSettings(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/SicherheitsEinstellungen.fxml"));
         PasswortChangePane.getChildren().setAll(newPane);
     }
-    //Textfeld Eingabe Auswerten
+    //Umwandlung der eingabe in das Textfeldes, in ein String
     String Eingabe1;
     String Eingabe2;
     String Eingabe3;
 
-    //Methode zur Änderung des alten Passwortes
+    // Methode zur Erfassung von der Eingabe in das Textfeld
     public TextField getTfAltesPasswort() {
 
         return tfAltesPasswort;
     }
 
-    //Methode zur Änderung des neuen Passworts
     public TextField getTfNeuesPasswort() {
 
         return tfNeuesPasswort;
     }
-    //Methode für das Wiederholen des Passwortes
     public TextField getTfPasswortWiederholen() {
 
         return tfPasswortWiederholen;
     }
-    // Methode zur Ausgabe des Eingegebene Textfeldes
+    /**
+     * Methode von Zuweisung der jeweiligen Textfelder in ein String
+     * Wiedergabe durch System.out.println
+     * @param event Ausgabe von eingebenem Text
+     */
     public void submit(ActionEvent event) {
         Eingabe1 = tfAltesPasswort.getText();
         Eingabe2 = tfNeuesPasswort.getText();
