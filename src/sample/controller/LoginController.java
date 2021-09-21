@@ -74,8 +74,8 @@ public class LoginController{
             if (Username.isEmpty()||Password.isEmpty()){
                 System.out.println("Fehler!");
                 //StackPane layout = new window("../view/Error.fxml");
-                AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Error.fxml"));
-                loginPane.getChildren().setAll(newPane);
+                //AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Error.fxml"));
+                //loginPane.getChildren().setAll(newPane);
             }
             else {
                 CloseableHttpClient httpclient = HttpClients.createDefault(); {
