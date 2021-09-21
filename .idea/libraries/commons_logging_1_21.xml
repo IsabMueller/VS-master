@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="commons-logging-1.21">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/commons-logging-1.21.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/httpclient-4.5.131.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/httpcore-4.4.141.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/junit-4.13.21.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
