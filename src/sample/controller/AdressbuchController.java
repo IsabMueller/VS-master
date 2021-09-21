@@ -8,7 +8,6 @@ import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 
-//< erstmal ignorieren
 
 public class AdressbuchController {
     @FXML

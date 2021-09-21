@@ -20,7 +20,6 @@ public class WochenÜbersichtController {
      * @param event
      * @throws IOException
      */
-    //< Methode der Rückkehr eines ÜbersichtTages
     public void handleBtnBackÜbersichtTag(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Uebersicht.fxml"));
         WochenÜbersichtPane.getChildren().setAll(newPane);

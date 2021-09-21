@@ -30,10 +30,8 @@ public class EinstellungenAendernUsernameController {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/ProfilEinstellungen.fxml"));
         usernameChangePane.getChildren().setAll(newPane);
     }
-    //< Umwandlung der eingabe in das Textfeldes, in ein String
     String Eingabe;
 
-    //< Methode zur Erfassung von der Eingabe in das Textfeld
     public TextField getTfChangedUsername() {
 
         return tfChangedUsername;

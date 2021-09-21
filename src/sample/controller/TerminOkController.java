@@ -13,7 +13,6 @@ public class TerminOkController {
      * Controller zur Bestätigung einer Terminanfrage
      * @param actionEvent
      */
-    //< Methode zur Bestätigung einer Terminanfrage
     public void handleBtnOK(ActionEvent actionEvent) {
     }
 }

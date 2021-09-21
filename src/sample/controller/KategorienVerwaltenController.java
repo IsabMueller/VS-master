@@ -40,10 +40,8 @@ public class KategorienVerwaltenController {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Einstellungen.fxml"));
         KategorienVerwaltenPane.getChildren().setAll(newPane);
     }
-    //< Umwandlung der eingabe in das Textfeldes, in ein String
     String kategorie;
 
-    //< Methode zur Erfassung von der Eingabe in das Textfeld
     public TextField getTfKategorieName(){
         return tfKategorieName;
     }
@@ -63,7 +61,7 @@ public class KategorienVerwaltenController {
 
 
     }
-    //< Colorpicker removed
+    //Colorpicker removed
     /**
     *Colorpicker
     *public void ChangeColor(ActionEvent event){

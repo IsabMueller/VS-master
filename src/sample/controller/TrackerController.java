@@ -27,7 +27,6 @@ public class TrackerController {
      * @param event
      * @throws IOException
      */
-    //< Methode von Zuweisung eines Buttons
     public void handleBtnBackSettings(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Start.fxml"));
         TrackerPane.getChildren().setAll(newPane);

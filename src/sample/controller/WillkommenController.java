@@ -24,9 +24,8 @@ public class WillkommenController {
     /**
      * Methode von Zuweisung eines Buttons
      * Aufruf des GUI "Willkommen" (Post LogIn Screen)
-     * @param actionEvent
+     * @param actionEvent Wechsel zum GUI "Register"
      */
-    //< Aufrufen der Register.fxml
     public void handleBtnReg(ActionEvent actionEvent) {
         BorderPane newPane = null;
         try {
@@ -37,7 +36,11 @@ public class WillkommenController {
         welcomePane.getChildren().setAll(newPane);
     }
 
-    //< Aufrufen der Login.fxml
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Aufruf des GUI "Willkommen" (Post LogIn Screen)
+     * @param actionEvent Wechsel zum GUI "Login"
+     */
     public void handleBtnLogIn(ActionEvent actionEvent) {
         BorderPane newPane = null;
         try {

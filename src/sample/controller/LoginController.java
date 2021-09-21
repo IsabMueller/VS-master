@@ -117,7 +117,12 @@ public class LoginController{
             }
     }
 
-   //< Methode von Zuweisung eines Buttons,Weilerleitung zum Hauptbildschirm
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Login"
+     * @param event Wechsel zum GUI "Start"
+     * @throws IOException
+     */
     public void handleBtnCancel(ActionEvent event) {
         AnchorPane newPane = null;
         try {

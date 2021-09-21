@@ -33,12 +33,10 @@ public class EinstellungenAendernEmailController {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/SicherheitsEinstellungen.fxml"));
         EmailChangePane.getChildren().setAll(newPane);
     }
-    //< Umwandlung der eingabe in das Textfeldes, in ein String
     String Eingabe1;
     String Eingabe2;
     String Eingabe3;
 
-    //<<<<<< Methode zur Erfassung von der Eingabe in das Textfeld
     public TextField getTfEmailWiederholen() {
         return tfEmailWiederholen;
     }

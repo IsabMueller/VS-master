@@ -38,7 +38,6 @@ public class EinstellungenAendernAdresseController {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/ProfilEinstellungen.fxml"));
         adresseChangePane.getChildren().setAll(newPane);
     }
-    //< Umwandlung der eingabe in das Textfeldes, in ein String
     String Eingabe1;
     String Eingabe2;
     String Eingabe3;
@@ -46,7 +45,6 @@ public class EinstellungenAendernAdresseController {
     String Eingabe5;
 
 
-     //< Methode zur Erfassung von der Eingabe in das Textfeld
     public TextField getTfChangedLand() {
         return tfChangedLand;
     }

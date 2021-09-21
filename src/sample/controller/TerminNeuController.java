@@ -7,8 +7,6 @@ import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 
 class TerminNeuController{
@@ -72,8 +70,10 @@ class TerminNeuController{
 
 
     /**
-     * Zurück zum GUI "Start"
-     * @param event
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "TerminNeu"
+     * @param event Wechsel zum GUI "Start"
+     * @throws IOException
      */
     @FXML
 
