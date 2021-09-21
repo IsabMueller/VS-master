@@ -26,7 +26,7 @@ public class WillkommenController {
      * Aufruf des GUI "Willkommen" (Post LogIn Screen)
      * @param actionEvent
      */
-    // Aufrufen der Register.fxml
+    //< Aufrufen der Register.fxml
     public void handleBtnReg(ActionEvent actionEvent) {
         BorderPane newPane = null;
         try {
@@ -37,7 +37,7 @@ public class WillkommenController {
         welcomePane.getChildren().setAll(newPane);
     }
 
-    // Aufrufen der Login.fxml
+    //< Aufrufen der Login.fxml
     public void handleBtnLogIn(ActionEvent actionEvent) {
         BorderPane newPane = null;
         try {

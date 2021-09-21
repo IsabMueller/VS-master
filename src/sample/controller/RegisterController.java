@@ -85,10 +85,10 @@ public class RegisterController {
         return tfRegVorname;
     }
 
-    //public TextField getTfGeburtstag() {
-      //  return tfBirthday;
+    //< public TextField getTfGeburtstag() {
+      //<  return tfBirthday;
    // }
-    // Methode zur Erfassung von der Eingabe in das Textfeld
+    //< Methode zur Erfassung von der Eingabe in das Textfeld
 
     public TextField getTfRegNachname() {
         return tfRegNachname;
@@ -114,7 +114,7 @@ public class RegisterController {
         return tfRegPwConfirm;
     }
 
-    //Umwandlung der eingabe in das Textfeldes, in ein String
+    //< Umwandlung der eingabe in das Textfeldes, in ein String
     public String firstName;
     public String lastName;
     public String username;
@@ -132,7 +132,7 @@ public class RegisterController {
      * @param event Ausgabe von eingebenem Text
      */
     public void submitBtnReg(ActionEvent event) throws UnsupportedEncodingException {
-//Stringzuordnung der TxtField eingabe
+//< Stringzuordnung der TxtField eingabe
             firstName = tfRegVorname.getText();
             lastName = tfRegNachname.getText();
             username = tfRegUsername.getText();

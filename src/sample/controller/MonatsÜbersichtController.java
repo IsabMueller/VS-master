@@ -20,7 +20,7 @@ public class MonatsÜbersichtController {
      * @param event Wechsel zum GUI "Übersicht"
      * @throws IOException
      */
-    //Methode der Rückkehr eines ÜbersichtTages
+    //< Methode der Rückkehr eines ÜbersichtTages
     public void handleBtnBackÜbersichtTag(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Uebersicht.fxml"));
         MonatsÜbersichtPane.getChildren().setAll(newPane);

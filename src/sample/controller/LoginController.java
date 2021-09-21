@@ -47,7 +47,7 @@ public class LoginController{
     @FXML
     private BorderPane loginPane;
 
-    // Methode zur Erfassung von der Eingabe in das Textfeld
+    //< Methode zur Erfassung von der Eingabe in das Textfeld
     public TextField getTfUsername() {
         return tfUsername;
     }
@@ -56,7 +56,7 @@ public class LoginController{
         return tfPassword;
     }
 
-    //Umwandlung der eingabe in das Textfeldes, in ein String
+    //< Umwandlung der eingabe in das Textfeldes, in ein String
     public String Username;
     public String Password;
     public Stage window;
@@ -117,7 +117,7 @@ public class LoginController{
             }
     }
 
-   //Methode von Zuweisung eines Buttons,Weilerleitung zum Hauptbildschirm
+   //< Methode von Zuweisung eines Buttons,Weilerleitung zum Hauptbildschirm
     public void handleBtnCancel(ActionEvent event) {
         AnchorPane newPane = null;
         try {
