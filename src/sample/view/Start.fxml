@@ -31,7 +31,7 @@
          <Font name="System Bold" size="12.0" />
       </font>
    </Button>
-   <Button fx:id="btnLogout" layoutX="740.0" layoutY="457.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="170.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Logout!" textFill="GAINSBORO">
+   <Button fx:id="btnLogout" layoutX="740.0" layoutY="457.0" mnemonicParsing="false" onAction="#handlebtnLogout" prefHeight="32.0" prefWidth="170.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Logout!" textFill="GAINSBORO">
       <font>
          <Font name="System Bold" size="12.0" />
       </font>

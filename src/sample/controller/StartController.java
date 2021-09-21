@@ -115,6 +115,16 @@ public class StartController {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Tracker.fxml"));
         startPane.getChildren().setAll(newPane);
     }
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Start"
+     * @param event Wechsel zum GUI "Willkommen"
+     * @throws IOException
+     */
+    public void handlebtnLogout(ActionEvent event) throws IOException {
+        AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Willkommen.fxml"));
+        startPane.getChildren().setAll(newPane);
+    }
 }
 
 
