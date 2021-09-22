@@ -11,6 +11,8 @@ import java.io.IOException;
 public class StartController {
 
     @FXML
+    private Button btnbuildTermin;
+    @FXML
     private AnchorPane TerminTabelle;
     @FXML
     private Button btnTerminEdit;
@@ -35,16 +37,7 @@ public class StartController {
     @FXML
     private Button btnTerminNew;
 
-    /**
-     * Methode von Zuweisung eines Buttons
-     * Controller Klasse für den Punkt "Start"
-     * @param event Wechsel zum GUI "TerminNeu"
-     * @throws IOException
-     */
-    public void handleBtnTerminNew(ActionEvent event) throws IOException {
-        AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/TerminNeu.fxml"));
-        startPane.getChildren().setAll(newPane);
-    }
+
     /**
      * Methode von Zuweisung eines Buttons
      * Controller Klasse für den Punkt "Start"
@@ -123,6 +116,16 @@ public class StartController {
      */
     public void handlebtnLogout(ActionEvent event) throws IOException {
         AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/Willkommen.fxml"));
+        startPane.getChildren().setAll(newPane);
+    }
+    /**
+     * Methode von Zuweisung eines Buttons
+     * Controller Klasse für den Punkt "Start"
+     * @param event Wechsel zum GUI "Willkommen"
+     * @throws IOException
+     */
+    public void HandleBtnNewTermin(ActionEvent event) throws IOException {
+        AnchorPane newPane = FXMLLoader.load(getClass().getResource("../view/FixedTerminNeu.fxml"));
         startPane.getChildren().setAll(newPane);
     }
 }

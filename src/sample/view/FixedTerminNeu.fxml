@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="BuildTermin" prefHeight="530.0" prefWidth="960.0" style="-fx-background-color: #1c1c1c;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.FixedTerminNeuController">
+   <children>
+      <AnchorPane layoutX="-9.0" prefHeight="530.0" prefWidth="181.0" style="-fx-background-color: #434343;" />
+      <Line endX="-36.0" endY="-448.0" layoutX="162.0" layoutY="448.0" startX="-153.70712280273438" startY="82.0" stroke="DARKTURQUOISE" />
+      <Line endY="-458.0" layoutX="172.0" layoutY="458.0" startX="-172.00001525878906" startY="72.0" stroke="DARKTURQUOISE" />
+      <DatePicker fx:id="dpTerminNeu" layoutX="193.0" layoutY="211.0" prefHeight="25.0" prefWidth="242.0" style="-fx-background-color: #00CED1;" />
+      <Label layoutX="202.0" layoutY="35.0" prefHeight="41.0" prefWidth="242.0" style="-fx-border-color: #00ced1;" text="  Terminerstellung" textFill="GAINSBORO">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="191.0" layoutY="171.0" prefHeight="26.0" prefWidth="86.0" text="Wähle Datum:" textFill="GAINSBORO" underline="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="836.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleBtnBack" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="Zurück" textFill="GAINSBORO" />
+      <Button fx:id="btnOK" layoutX="844.0" layoutY="485.0" mnemonicParsing="false" onAction="#submitBtnOK" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #473c8b; -fx-border-color: #00ced1;" text="OK" textFill="GAINSBORO" />
+      <Line endX="646.9857788085938" endY="14.400016784667969" layoutX="276.0" layoutY="73.0" startX="-93.20002746582031" startY="14.400009155273438" stroke="DARKTURQUOISE" />
+      <Label layoutX="191.0" layoutY="333.0" prefHeight="26.0" prefWidth="86.0" text="Ort:" textFill="GAINSBORO" underline="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="247.0" prefHeight="26.0" prefWidth="86.0" text="Von:" textFill="GAINSBORO" underline="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="467.0" layoutY="264.0" prefHeight="36.0" prefWidth="16.0" text=":" textFill="GAINSBORO">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="401.0" layoutY="247.0" prefHeight="26.0" prefWidth="86.0" text="Bis" textFill="GAINSBORO" underline="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="191.0" layoutY="388.0" prefHeight="26.0" prefWidth="86.0" text="Notizen:" textFill="GAINSBORO" underline="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="456.0" layoutY="171.0" prefHeight="26.0" prefWidth="86.0" text="Kategorie:" textFill="GAINSBORO" underline="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="190.0" layoutY="93.0" prefHeight="26.0" prefWidth="86.0" text="Name:" textFill="GAINSBORO" underline="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="269.0" layoutY="264.0" prefHeight="36.0" prefWidth="16.0" text=":" textFill="GAINSBORO">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <TextField layoutX="194.0" layoutY="360.0" prefHeight="26.0" prefWidth="242.0" style="-fx-background-color: #dcdcdc; -fx-border-color: #00ced1;" />
+      <TextField layoutX="194.0" layoutY="422.0" prefHeight="89.0" prefWidth="282.0" style="-fx-background-color: #dcdcdc; -fx-border-color: #00ced1;" />
+      <TextField fx:id="tfVonStd" layoutX="199.0" layoutY="274.0" prefHeight="36.0" prefWidth="69.0" style="-fx-background-color: #dcdcdc; -fx-border-color: #00ced1;" />
+      <TextField fx:id="tfVonMin" layoutX="280.0" layoutY="274.0" prefHeight="36.0" prefWidth="69.0" style="-fx-background-color: #dcdcdc; -fx-border-color: #00ced1;" />
+      <TextField fx:id="tfBisMin" layoutX="475.0" layoutY="274.0" prefHeight="36.0" prefWidth="69.0" style="-fx-background-color: #dcdcdc; -fx-border-color: #00ced1;" />
+      <TextField fx:id="tfBisStd" layoutX="397.0" layoutY="274.0" prefHeight="36.0" prefWidth="69.0" style="-fx-background-color: #dcdcdc; -fx-border-color: #00ced1;" />
+      <TextField fx:id="textFieldName" layoutX="193.0" layoutY="119.0" prefHeight="26.0" prefWidth="242.0" promptText="name" style="-fx-background-color: #dcdcdc; -fx-border-color: #00ced1;" />
+      <ComboBox fx:id="comboboxKategorie" layoutX="456.0" layoutY="211.0" prefHeight="26.0" prefWidth="170.0" promptText="Default" style="-fx-border-color: #00ced1;" />
+      <Label layoutX="453.0" layoutY="93.0" prefHeight="26.0" prefWidth="144.0" text="Termin Erinnerung" textFill="GAINSBORO" underline="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboboxErinnerung" blendMode="ADD" editable="true" layoutX="453.0" layoutY="120.0" prefHeight="26.0" prefWidth="170.0" promptText="Default">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ComboBox>
+      <ComboBox fx:id="ComboboxWiederholen" layoutX="657.0" layoutY="119.0" prefHeight="26.0" prefWidth="170.0" promptText="Default" />
+      <Label layoutX="657.0" layoutY="93.0" prefHeight="26.0" prefWidth="144.0" text="Termin Wiederholen? " textFill="GAINSBORO" underline="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="676.0" layoutY="210.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="160.0" text="Wetterabfrage?" textFill="GAINSBORO" underline="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <ColorPicker fx:id="ChangeColorTermin" layoutX="669.0" layoutY="172.0" />
+   </children>
+</AnchorPane>
