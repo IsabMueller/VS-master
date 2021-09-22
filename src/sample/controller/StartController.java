@@ -121,7 +121,7 @@ public class StartController {
     /**
      * Methode von Zuweisung eines Buttons
      * Controller Klasse für den Punkt "Start"
-     * @param event Wechsel zum GUI "Willkommen"
+     * @param event Wechsel zum GUI "FixedTerminNeu"
      * @throws IOException
      */
     public void HandleBtnNewTermin(ActionEvent event) throws IOException {
