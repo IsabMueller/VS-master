@@ -1,1 +1,1 @@
-{"statusCode":401,"message":"Wrong credentials"}
+{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhbSIsInN1YiI6NiwiaWF0IjoxNjMyMzAyOTc4LCJleHAiOjE2MzIzODkzNzh9.lzDcOG3a3bHlXICMxB96jGZJIku2EFNp5bbNXIBfYFM"}

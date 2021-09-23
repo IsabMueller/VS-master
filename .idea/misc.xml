@@ -4,6 +4,11 @@
     <option name="archetypesFileLocation" value="archetypes.xml" />
     <option name="workingDirectory" value="" />
   </component>
+  <component name="EntryPointsManager">
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="javafx.fxml.FXML" />
+    </list>
+  </component>
   <component name="ExcludeFromValidation">
     <file url="file://$PROJECT_DIR$/src/sample/controller/TerminNeuController.java" />
   </component>
